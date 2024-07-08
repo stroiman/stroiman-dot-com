@@ -3,12 +3,15 @@
 import { clsx } from "clsx";
 import Link from "next/link";
 import { useState } from "react";
+import { useTranslation } from "../i18n";
 
-function Nav() {
+async function Nav({ params }: { params: { lng: string } }) {
+  const { lng } = params;
+  const { t } = await useTranslation(lng);
   return (
     <>
       <Link href="#mentoring" className="hover:opacity-90">
-        Mentoring
+        {t("nav.heroLinkText")}
       </Link>
       <Link href="#software-development" className="hover:opacity-90">
         Development
@@ -23,7 +26,7 @@ function Nav() {
   );
 }
 
-export default function Menu() {
+export default function Menu({ params }: { params: { lng: string } }) {
   const [showMenu, setShowMenu] = useState(false);
   const onClick = () => {
     setShowMenu((x) => !x);
@@ -53,7 +56,7 @@ export default function Menu() {
             <div className="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-white before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-white before:transition-all before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-white after:transition-all after:content-['']"></div>
           </button>
           <nav className="hidden space-x-8 text-xl md:block" aria-label="main">
-            <Nav />
+            <Nav params={params} />
           </nav>
         </div>
       </section>

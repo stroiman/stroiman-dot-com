@@ -1,11 +1,17 @@
+import { dir } from "i18next";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 import { clsx } from "clsx";
-import Menu from "./ui/menu";
+import Menu from "../ui/menu";
 import Link from "next/link";
+import { languages } from "../i18n/settings";
 
 const inter = Inter({ subsets: ["latin"] });
+
+export async function generateStaticParams() {
+  return languages.map((lng) => ({ lng }));
+}
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -13,18 +19,21 @@ export const metadata: Metadata = {
 };
 export default function RootLayout({
   children,
+  params,
 }: Readonly<{
   children: React.ReactNode;
+  params: { lng: string };
 }>) {
+  const { lng } = params;
   return (
-    <html lang="en" className="sm:scroll-smooth">
+    <html lang={lng} dir={dir(lng)} className="sm:scroll-smooth">
       <body
         className={clsx(
           inter.className,
           "min-h-screen bg-slate-50 dark:bg-black dark:text-white",
         )}
       >
-        <Menu />
+        <Menu params={params} />
 
         <main className="mx-auto max-w-4xl">{children}</main>
         <footer id="footer" className="bg-teal-800 text-xl text-white">

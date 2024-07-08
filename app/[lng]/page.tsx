@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { ReactNode } from "react";
-import { Programmer } from "./ui/image-svgs";
+import { Programmer } from "../ui/image-svgs";
 
 function HeroSection(props: {
   id: string;
@@ -45,7 +45,7 @@ function Section(props: {
   );
 }
 
-export default function Home() {
+export default function Page({ params }: { params: { lng: string } }) {
   return (
     <>
       <HeroSection
