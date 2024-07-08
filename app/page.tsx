@@ -33,7 +33,7 @@ function Section(props: {
 }) {
   const { id, heading, children } = props;
   return (
-    <section className="my-12 p-6">
+    <section className="widescreen:min-h-screen my-12 p-6">
       <h2
         id={id}
         className="mb-6 scroll-mt-20 text-center text-4xl font-bold text-slate-900 sm:text-5xl dark:text-white"

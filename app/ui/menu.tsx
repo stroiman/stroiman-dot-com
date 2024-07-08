@@ -25,7 +25,7 @@ function Nav() {
 export default function Menu() {
   const [showMenu, setShowMenu] = useState(false);
   const onClick = () => {
-    setShowMenu(true);
+    setShowMenu((x) => !x);
   };
   const menuClick = () => {
     setShowMenu(false);
@@ -39,10 +39,17 @@ export default function Menu() {
         <div>
           <button
             id="mobile-open"
-            className="cursor-pointer text-3xl focus:outline-none md:hidden"
+            className={clsx(
+              "relative h-8 w-8 cursor-pointer text-3xl focus:outline-none md:hidden",
+              {
+                "[&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div::before]:translate-y-0 [&>div::before]:rotate-45 [&>div]:rotate-[720deg] [&>div]:bg-transparent":
+                  showMenu,
+              },
+            )}
             onClick={onClick}
+            // &#9776;
           >
-            &#9776;
+            <div className="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-white before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-white before:transition-all before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-white after:transition-all after:content-['']"></div>
           </button>
           <nav className="hidden space-x-8 text-xl md:block" aria-label="main">
             <Nav />
@@ -53,14 +60,13 @@ export default function Menu() {
         id="mobile-menu"
         onClick={menuClick}
         className={clsx(
-          "justify-content-center animate-open-menu absolute top-0 w-full origin-top flex-col bg-black text-5xl",
+          "justify-content-center animate-open-menu top-68 absolute w-full origin-top flex-col bg-black text-5xl",
           {
             hidden: !showMenu,
             flex: showMenu,
           },
         )}
       >
-        <button className="self-end px-6 text-8xl">&times;</button>
         <nav className="flex min-h-screen flex-col items-center py-8">
           <a href="#hero" className="w-full py-6 text-center hover:opacity-90">
             Hero
