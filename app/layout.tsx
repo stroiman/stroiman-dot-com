@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { clsx } from "clsx";
 import Menu from "./ui/menu";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -34,9 +35,9 @@ export default function RootLayout({
               <br />
             </address>
             <nav className="hidden flex-col gap-2 md:flex" aria-label="footer">
-              <a href="#hero-section" className="hover:opacity-90">
+              <Link href="#hero-section" className="hover:opacity-90">
                 Back up
-              </a>
+              </Link>
             </nav>
           </section>
         </footer>
