@@ -894,7 +894,7 @@ export const Logo = (props: { className?: string }) => (
     // viewBox="0 0 1848.000000 1472.000000"
     viewBox="0 0 1848.000000 1372.000000"
     fill="currentcolor"
-    stroke-width="50"
+    strokeWidth="50"
     stroke="#FFFFFF"
   >
     <path
