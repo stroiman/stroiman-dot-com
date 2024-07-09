@@ -4,6 +4,7 @@ import { clsx } from "clsx";
 import Link from "next/link";
 import { useState } from "react";
 import { useTranslation } from "../i18n";
+import { Logo } from "./image-svgs";
 
 async function Nav({ params }: { params: { lng: string } }) {
   const { lng } = params;
@@ -38,6 +39,7 @@ export default function Menu({ params }: { params: { lng: string } }) {
     <header className="sticky top-0 z-10 bg-teal-700 text-white">
       <section className="mx-auto flex max-w-4xl items-center justify-between p-4">
         <Link href="#hero-section" className="text-3xl font-medium">
+          <Logo className="mr-1 inline h-[1em]" />
           stroiman
         </Link>
         <div>
@@ -64,7 +66,7 @@ export default function Menu({ params }: { params: { lng: string } }) {
         id="mobile-menu"
         onClick={menuClick}
         className={clsx(
-          "justify-content-center animate-open-menu top-68 absolute w-full origin-top flex-col bg-black text-5xl",
+          "justify-content-center top-68 absolute w-full origin-top animate-open-menu flex-col bg-black text-5xl",
           {
             hidden: !showMenu,
             flex: showMenu,
