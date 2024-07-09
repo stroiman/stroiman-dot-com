@@ -6,21 +6,13 @@ import { useState } from "react";
 import { Lang, useTranslation } from "../i18n";
 import { Logo } from "./image-svgs";
 
-async function Nav({ lng }: { lng: Lang }) {
-  const { t } = await useTranslation(lng);
-  return (
-    <>
-      <Link href="#mentoring" className="hover:opacity-90">
-        {t("nav.mentoringLinkText")}
-      </Link>
-      <Link href="#software-development" className="hover:opacity-90">
-        {t("nav.softwareDevelopmentLinkText")}
-      </Link>
-    </>
-  );
-}
-
-export default function Menu({ lng }: { lng: Lang }) {
+export default function Menu({
+  lng,
+  children,
+}: {
+  lng: Lang;
+  children: ReactNode;
+}) {
   const [showMenu, setShowMenu] = useState(false);
   const onClick = () => {
     setShowMenu((x) => !x);
@@ -51,7 +43,7 @@ export default function Menu({ lng }: { lng: Lang }) {
             <div className="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-white before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-white before:transition-all before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-white after:transition-all after:content-['']"></div>
           </button>
           <nav className="hidden space-x-8 text-xl md:block" aria-label="main">
-            <Nav lng={lng} />
+            {children}
           </nav>
         </div>
       </section>
@@ -59,7 +51,7 @@ export default function Menu({ lng }: { lng: Lang }) {
         id="mobile-menu"
         onClick={menuClick}
         className={clsx(
-          "justify-content-center top-68 absolute w-full origin-top animate-open-menu flex-col bg-black text-5xl",
+          "justify-content-center top-68 animate-open-menu absolute w-full origin-top flex-col bg-black text-5xl",
           {
             hidden: !showMenu,
             flex: showMenu,
