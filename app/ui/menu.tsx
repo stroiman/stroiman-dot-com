@@ -3,10 +3,10 @@
 import { clsx } from "clsx";
 import Link from "next/link";
 import { useState } from "react";
-import { useTranslation } from "../i18n";
+import { Lang, useTranslation } from "../i18n";
 import { Logo } from "./image-svgs";
 
-async function Nav({ params }: { params: { lng: string } }) {
+async function Nav({ params }: { params: { lng: Lang } }) {
   const { lng } = params;
   const { t } = await useTranslation(lng);
   return (
