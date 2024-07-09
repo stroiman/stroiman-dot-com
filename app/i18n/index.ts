@@ -1,7 +1,21 @@
 import { createInstance } from "i18next";
 import resourcesToBackend from "i18next-resources-to-backend";
 import { initReactI18next } from "react-i18next/initReactI18next";
-import { getOptions } from "./settings";
+import { fallbackLng, languages } from "./settings";
+export const defaultNS = "translation";
+export type Lang = (typeof languages)[number];
+
+export function getOptions(lng = fallbackLng, ns = defaultNS) {
+  return {
+    // debug: true,
+    supportedLngs: languages,
+    fallbackLng,
+    lng,
+    fallbackNS: defaultNS,
+    defaultNS,
+    ns,
+  };
+}
 
 const initI18next = async (lng: any, ns) => {
   const i18nInstance = createInstance();
