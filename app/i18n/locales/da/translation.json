@@ -1,5 +1,15 @@
 {
   "nav": {
-    "heroLinkText": "Helt!"
+    "mentoringLinkText": "mentoring",
+    "softwareDevelopmentLinkText": "Udvikling"
+  },
+  "frontpage": {
+    "heroSection": {
+      "headingText": "Freelance Software udvikler med <0>mere end 25 års erfaring</0>"
+    },
+    "mentoring": {
+      "headingText": "Mentoring",
+      "sectionText": "Jeg tilbyder one-on-one mentoring"
+    }
   }
 }

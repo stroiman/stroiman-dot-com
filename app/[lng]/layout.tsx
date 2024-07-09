@@ -6,6 +6,7 @@ import { clsx } from "clsx";
 import Menu from "../ui/menu";
 import Link from "next/link";
 import { languages } from "../i18n/settings";
+import { Lang } from "../i18n";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,7 +23,7 @@ export default function RootLayout({
   params,
 }: Readonly<{
   children: React.ReactNode;
-  params: { lng: string };
+  params: { lng: Lang };
 }>) {
   const { lng } = params;
   return (
@@ -33,7 +34,7 @@ export default function RootLayout({
           "min-h-screen bg-slate-50 dark:bg-black dark:text-white",
         )}
       >
-        <Menu params={params} />
+        <Menu lng={lng} />
 
         <main className="mx-auto max-w-4xl">{children}</main>
         <footer id="footer" className="bg-teal-800 text-xl text-white">

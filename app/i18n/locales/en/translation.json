@@ -1,5 +1,15 @@
 {
   "nav": {
-    "heroLinkText": "Hero"
+    "mentoringLinkText": "Mentoring",
+    "softwareDevelopmentLinkText": "Custom Development"
+  },
+  "frontpage": {
+    "heroSection": {
+      "headingText": "Freelance Software Developer with <0>25+ years of experience</0>"
+    },
+    "mentoring": {
+      "headingText": "Mentoring",
+      "sectionText": "I provide one-on-one mentoring sessions"
+    }
   }
 }
