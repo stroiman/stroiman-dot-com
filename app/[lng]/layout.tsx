@@ -3,10 +3,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "../globals.css";
 import { clsx } from "clsx";
-import Menu from "../ui/menu";
-import Link from "next/link";
-import { languages } from "../i18n/settings";
-import { Lang, useTranslation } from "../i18n";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,7 +23,6 @@ export default async function RootLayout({
   params: { lng: Lang };
 }>) {
   const { lng } = params;
-  const { t } = await useTranslation(lng);
   return (
     <html lang={lng} dir={dir(lng)} className="sm:scroll-smooth">
       <body
@@ -36,30 +31,7 @@ export default async function RootLayout({
           "min-h-screen bg-slate-50 dark:bg-black dark:text-white",
         )}
       >
-        <Menu lng={lng}>
-          <Link href="#mentoring" className="hover:opacity-90">
-            {t("nav.mentoringLinkText")}
-          </Link>
-          <Link href="#software-development" className="hover:opacity-90">
-            {t("nav.softwareDevelopmentLinkText")}
-          </Link>
-        </Menu>
-
-        <main className="mx-auto max-w-4xl">{children}</main>
-        <footer id="footer" className="bg-teal-800 text-xl text-white">
-          <section className="mx-auto flex max-w-4xl flex-col p-4 sm:flex-row sm:justify-between">
-            <address className="text-sm">
-              <h2>Peter Strøiman ApS</h2>
-              Email: <a href="mailto:info@stroiman.com">info@stroiman.com</a>
-              <br />
-            </address>
-            <nav className="hidden flex-col gap-2 md:flex" aria-label="footer">
-              <Link href="#hero-section" className="hover:opacity-90">
-                Back up
-              </Link>
-            </nav>
-          </section>
-        </footer>
+        {children}
       </body>
     </html>
   );
