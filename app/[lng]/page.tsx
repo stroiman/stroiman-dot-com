@@ -113,7 +113,7 @@ export default async function Page({ params }: { params: { lng: Lang } }) {
               <Para>{t("frontpage.softwareDevelopment.paragraph3")}</Para>
             </div>
             <ProgrammerWorking
-              className="sm:w-1/3"
+              className="sm:w-1/3 dark:bg-gradient-radial dark:from-orange-400 dark:text-slate-900"
               title={t("frontpage.softwareDevelopment.imageTitle")}
             />
           </div>
@@ -159,7 +159,10 @@ export default async function Page({ params }: { params: { lng: Lang } }) {
         <Section id="courses" heading={t("frontpage.courses.headingText")}>
           <div className="flex flex-col gap-8 sm:flex-row">
             <figure className="sm:w-1/3">
-              <Education title={t("frontpage.courses.imageCaption")} />
+              <Education
+                title={t("frontpage.courses.imageCaption")}
+                className="sm:w-1/3 dark:bg-gradient-radial dark:from-orange-400 dark:text-slate-900"
+              />
               <figcaption className="text-body text-xs" aria-hidden>
                 {t("frontpage.courses.imageCaption")}
               </figcaption>
@@ -173,18 +176,21 @@ export default async function Page({ params }: { params: { lng: Lang } }) {
         </Section>
 
         <Section id="training" heading={t("frontpage.training.headingText")}>
-          <div className="flex flex-col gap-8 sm:flex-row">
+          <div className="flex flex-col-reverse gap-8 sm:flex-row">
             <div className="flex flex-col gap-4 sm:w-2/3">
               <Para>{t("frontpage.training.paragraph1")}</Para>
             </div>
             <Programmer
               title={t("frontpage.training.imageTitle")}
-              className="sm:w-1/3"
+              className="sm:w-1/3 dark:bg-gradient-radial dark:from-orange-400 dark:text-slate-900"
             />
           </div>
         </Section>
       </Main>
-      <footer id="footer" className="bg-teal-800 text-xl text-white">
+      <footer
+        id="footer"
+        className="border-t border-t-black pt-4 text-xl dark:border-t-white"
+      >
         <section className="mx-auto flex max-w-4xl flex-col p-4 sm:flex-row sm:justify-between">
           <address className="text-sm">
             <h2>Peter Strøiman ApS</h2>

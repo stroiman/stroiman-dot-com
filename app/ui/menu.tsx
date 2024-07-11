@@ -26,8 +26,8 @@ export default function Menu({
     setShowMenu(false);
   };
   return (
-    <header className="sticky top-0 z-10 bg-teal-700 text-white">
-      <div className="relative z-20 mx-auto max-w-4xl bg-teal-700 px-4 py-2">
+    <header className="mask sticky top-0 z-10 bg-white bg-opacity-50 text-black backdrop-blur dark:bg-black dark:bg-opacity-20 dark:text-white">
+      <div className="relative z-20 mx-auto px-4 py-2">
         <section className="flex items-center justify-between">
           <Link href={`/${lng}/#top`} className="text-2xl font-medium">
             <Logo className="mr-1 inline h-[1em]" title="Logo" />
@@ -66,6 +66,7 @@ export default function Menu({
       >
         {popup}
       </section>
+      <div className="h-8" />
     </header>
   );
 }

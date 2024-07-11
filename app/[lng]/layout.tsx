@@ -40,7 +40,7 @@ export default async function RootLayout({
           inter.className,
           sourceSefif.className,
 
-          "min-h-screen bg-slate-50 font-light dark:bg-black dark:text-white",
+          "min-h-screen bg-slate-50 bg-gradient-to-br from-orange-100 to-slate-200 font-light dark:bg-black dark:from-orange-950 dark:to-slate-900 dark:text-white",
         )}
       >
         {children}

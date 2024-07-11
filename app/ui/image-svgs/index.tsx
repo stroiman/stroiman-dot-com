@@ -901,7 +901,7 @@ export const Logo = (props: SVGWithTitleProps) => (
     viewBox="0 0 1848.000000 1372.000000"
     fill="currentcolor"
     strokeWidth="50"
-    stroke="#FFFFFF"
+    stroke="currentcolor"
   >
     <SvgTitle {...props} />
     <path
