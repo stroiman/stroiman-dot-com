@@ -1,4 +1,7 @@
+import { Saira_Extra_Condensed } from "next/font/google";
+import { Source_Serif_4 } from "next/font/google";
 import type { Config } from "tailwindcss";
+import colors from "tailwindcss/colors";
 
 const config: Config = {
   content: [
@@ -8,6 +11,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        heading: ['"Source Serif 4"', "Georgia", "serif"],
+        body: ["Synonym", "system-ui", "sans-serif"],
+      },
+      colors: {
+        primary: colors.teal,
+        secondary: colors.zinc,
+        body: colors.zinc["500"],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

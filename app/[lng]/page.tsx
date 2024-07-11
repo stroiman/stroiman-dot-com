@@ -7,19 +7,68 @@ import Section, { HeroSection } from "./section";
 import ProgrammerWorking from "../ui/image-svgs/programmer-working";
 import Education from "../ui/image-svgs/education";
 import LanguageSwitcher from "./language-switcher";
+import Links from "./links";
+import Para from "./para";
 
 export default async function Page({ params }: { params: { lng: Lang } }) {
   const { lng } = params;
   const { t } = await useTranslation(lng);
   return (
     <>
-      <Menu lng={lng} switcher={<LanguageSwitcher lng={lng} />}>
+      <Menu
+        lng={lng}
+        switcher={<LanguageSwitcher lng={lng} />}
+        popup={
+          <>
+            <nav className="py-16">
+              <ul className="flex flex-col items-center gap-6 py-2">
+                <li>
+                  <Link
+                    href="#top"
+                    className="w-full text-center hover:opacity-90"
+                  >
+                    Hero
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="#mentoring"
+                    className="w-full text-center hover:opacity-90"
+                  >
+                    Mentor
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="#software-development"
+                    className="table-cell w-full text-center align-middle hover:opacity-90"
+                  >
+                    Software development
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="#footer"
+                    className="w-full text-center hover:opacity-90"
+                  >
+                    Legal
+                  </Link>
+                </li>
+              </ul>
+              <Links lng={lng} className="fixed bottom-4 right-4" />
+            </nav>
+          </>
+        }
+      >
         <Link href="#software-development" className="hover:opacity-90">
           {t("nav.softwareDevelopmentLinkText")}
         </Link>
         <Link href="#mentoring" className="hover:opacity-90">
           {t("nav.mentoringLinkText")}
         </Link>
+        <div className="inline space-x-2">
+          <Links lng={lng} />
+        </div>
       </Menu>
 
       <Main>
@@ -30,7 +79,10 @@ export default async function Page({ params }: { params: { lng: Lang } }) {
               t={t}
               i18nKey="frontpage.heroSection.headingText"
               components={[
-                <span className="text-indigo-700 dark:text-indigo-300" />,
+                <span
+                  key={0}
+                  className="text-indigo-700 dark:text-indigo-300"
+                />,
               ]}
             />
           }
@@ -44,11 +96,9 @@ export default async function Page({ params }: { params: { lng: Lang } }) {
         >
           <div className="flex flex-col-reverse gap-8 sm:flex-row">
             <div className="flex flex-col gap-4 sm:w-2/3">
-              <p className="">
-                {t("frontpage.softwareDevelopment.paragraph1")}
-              </p>
-              <p>{t("frontpage.softwareDevelopment.paragraph2")}</p>
-              <p>{t("frontpage.softwareDevelopment.paragraph3")}</p>
+              <Para>{t("frontpage.softwareDevelopment.paragraph1")}</Para>
+              <Para>{t("frontpage.softwareDevelopment.paragraph2")}</Para>
+              <Para>{t("frontpage.softwareDevelopment.paragraph3")}</Para>
             </div>
             <ProgrammerWorking className="sm:w-1/3" />
           </div>
@@ -94,27 +144,22 @@ export default async function Page({ params }: { params: { lng: Lang } }) {
         <Section id="mentoring" heading={"Kurser og træning"}>
           <div className="flex flex-col gap-8 sm:flex-row">
             <figure className="sm:w-1/3">
-              <Education />
-              <figcaption className="text-xs md:text-xs">
-                Et billede af en underviser, der laver djævle-tegnet? AI har
-                stadig mange begrænsninger.
+              <Education title={t("frontpage.mentoring.imageCaption")} />
+              <figcaption className="text-body text-xs" aria-hidden>
+                {t("frontpage.mentoring.imageCaption")}
               </figcaption>
             </figure>
             <div className="flex flex-col gap-4 sm:w-2/3">
-              <h3 className="text-2xl">Kurser</h3>
-              <p>
-                Har I en udviklingsafdeling, der skal lære ny teknologi? Er
-                jeres .NET app site ikke længere tidssvarent? Jeg tilbyder
-                skræddersyede kurser, der kan hjælpe jeres afdeling på vej.
-              </p>
+              <h3 className="font-heading text-2xl font-medium md:font-normal">
+                {t("frontpage.mentoring.section1.headingText")}
+              </h3>
+              <Para>{t("frontpage.mentoring.section1.paragraph1")}</Para>
 
-              <h3 className="text-2xl">Remote træning og pair programming</h3>
-              <p>
-                Med online pair programming sessioner kan jeg hjælpe jer på vej
-                med ny teknologi, eller lære jer at blive mere effektive gennem
-                anvendelsen af TDD.
-              </p>
-              <p>Kontakt mig for at høre mere om kursus og træningsforløb.</p>
+              <h3 className="font-heading text-2xl font-normal md:font-normal">
+                {t("frontpage.mentoring.section2.headingText")}
+              </h3>
+              <Para>{t("frontpage.mentoring.section2.paragraph1")}</Para>
+              <Para>{t("frontpage.mentoring.section2.paragraph2")}</Para>
             </div>
           </div>
         </Section>
@@ -123,14 +168,19 @@ export default async function Page({ params }: { params: { lng: Lang } }) {
         <section className="mx-auto flex max-w-4xl flex-col p-4 sm:flex-row sm:justify-between">
           <address className="text-sm">
             <h2>Peter Strøiman ApS</h2>
+            CVR: 32290671
+            <br />
             Email: <a href="mailto:info@stroiman.com">info@stroiman.com</a>
             <br />
+            Phone: <a href="tel:+4521902103">+45 21 90 21 03</a>
           </address>
+          {/*
           <nav className="hidden flex-col gap-2 md:flex" aria-label="footer">
             <Link href={`${lng}/#top`} className="hover:opacity-90">
               Back up
             </Link>
           </nav>
+          */}
         </section>
       </footer>
     </>

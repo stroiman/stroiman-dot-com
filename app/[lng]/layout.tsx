@@ -5,6 +5,7 @@ import "../globals.css";
 import { clsx } from "clsx";
 import { languages } from "../i18n/settings";
 import { Lang } from "../i18n";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,10 +28,24 @@ export default async function RootLayout({
   const { lng } = params;
   return (
     <html lang={lng} dir={dir(lng)} className="sm:scroll-smooth">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+          rel="stylesheet"
+        />
+        <title>Peter Strøiman - Freelance Software Developer</title>
+      </head>
       <body
         className={clsx(
           inter.className,
-          "min-h-screen bg-slate-50 dark:bg-black dark:text-white",
+
+          "min-h-screen bg-slate-50 font-light dark:bg-black dark:text-white",
         )}
       >
         {children}

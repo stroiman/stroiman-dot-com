@@ -4,13 +4,26 @@
     "mentoringLinkText": "mentoring",
     "softwareDevelopmentLinkText": "$t(frontpage.softwareDevelopment.headingText)"
   },
+  "links": {
+    "githubLinkLabel": "Se min Github side",
+    "linkedInLinkLabel": "Se min LinkedIn side"
+  },
   "frontpage": {
     "heroSection": {
       "headingText": "Freelance Software udvikler med <0>mere end 25 års erfaring</0>"
     },
     "mentoring": {
-      "headingText": "Mentoring",
-      "sectionText": "Jeg tilbyder one-on-one mentoring"
+      "headingText": "Kurser og træning",
+      "section1": {
+        "headingText": "Kurser",
+        "paragraph1": "Har I en udviklingsafdeling, der skal lære ny teknologi? Er jeres .NET app site ikke længere tidssvarent? Jeg tilbyder skræddersyede kurser, der kan hjælpe jeres afdeling på vej."
+      },
+      "section2": {
+        "headingText": "Remote træning og pair programming",
+        "paragraph1": "Med online pair programming sessioner kan jeg hjælpe jer på vej med ny teknologi, eller lære jer at blive mere effektive gennem anvendelsen af TDD.",
+        "paragraph2": "Kontakt mig for at høre mere om kursus og træningsforløb."
+      },
+      "imageCaption": "Et billede af en underviser, der laver djævle-tegnet? AI har stadig mange begrænsninger."
     },
     "softwareDevelopment": {
       "headingText": "Software Development",
