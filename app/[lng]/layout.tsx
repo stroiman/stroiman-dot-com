@@ -1,6 +1,6 @@
 import { dir } from "i18next";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Source_Serif_4 } from "next/font/google";
 import "../globals.css";
 import { clsx } from "clsx";
 import { languages } from "../i18n/settings";
@@ -8,6 +8,10 @@ import { Lang } from "../i18n";
 import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
+const sourceSefif = Source_Serif_4({
+  subsets: ["latin"],
+  variable: "--source-serif",
+});
 
 export async function generateStaticParams() {
   return languages.map((lng) => ({ lng }));
@@ -29,21 +33,12 @@ export default async function RootLayout({
   return (
     <html lang={lng} dir={dir(lng)} className="sm:scroll-smooth">
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
-          rel="stylesheet"
-        />
         <title>Peter Strøiman - Freelance Software Developer</title>
       </head>
       <body
         className={clsx(
           inter.className,
+          sourceSefif.className,
 
           "min-h-screen bg-slate-50 font-light dark:bg-black dark:text-white",
         )}

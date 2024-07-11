@@ -12,7 +12,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        heading: ['"Source Serif 4"', "Georgia", "serif"],
+        //heading: ['"Source Serif 4"', "Georgia", "serif"],
+        heading: ["var(--source-serif)", "Georgia", "serif"],
         body: ["Synonym", "system-ui", "sans-serif"],
       },
       colors: {
