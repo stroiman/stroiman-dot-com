@@ -92,8 +92,14 @@ export default async function Page({ params }: { params: { lng: Lang } }) {
         <hr className="mx-auto w-1/2 bg-black dark:bg-white" />
 
         <Section id="mentoring" heading={"Kurser og træning"}>
-          <div className="flex gap-8 sm:flex-row">
-            <Education className="sm:w-1/3" />
+          <div className="flex flex-col gap-8 sm:flex-row">
+            <figure className="sm:w-1/3">
+              <Education />
+              <figcaption className="text-xs md:text-xs">
+                Et billede af en underviser, der laver djævle-tegnet? AI har
+                stadig mange begrænsninger.
+              </figcaption>
+            </figure>
             <div className="flex flex-col gap-4 sm:w-2/3">
               <h3 className="text-2xl">Kurser</h3>
               <p>

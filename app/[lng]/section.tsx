@@ -10,7 +10,7 @@ export default function Section(props: {
   return (
     <section
       id={id}
-      className="widescreen:section-min-height my-12 flex scroll-mt-16 flex-col justify-center"
+      className="widescreen:section-min-height my-12 flex scroll-mt-20 flex-col justify-center"
     >
       <div>
         <h2 className="mb-6 items-center text-center text-4xl font-bold text-slate-900 sm:text-5xl dark:text-white">

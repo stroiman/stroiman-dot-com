@@ -66,31 +66,38 @@ export default function Menu({
           },
         )}
       >
-        <nav className="flex min-h-screen flex-col items-center py-8">
-          <Link
-            href="#hero"
-            className="w-full py-6 text-center hover:opacity-90"
-          >
-            Hero
-          </Link>
-          <Link
-            href="#mentoring"
-            className="w-full py-6 text-center hover:opacity-90"
-          >
-            Mentor
-          </Link>
-          <Link
-            href="#software-development"
-            className="w-full py-6 text-center hover:opacity-90"
-          >
-            Software development
-          </Link>
-          <Link
-            href="#footer"
-            className="w-full py-6 text-center hover:opacity-90"
-          >
-            Legal
-          </Link>
+        <nav className="py-16">
+          <ul className="flex min-h-screen flex-col items-center gap-6 py-2">
+            <li>
+              <Link href="#top" className="w-full text-center hover:opacity-90">
+                Hero
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="#mentoring"
+                className="w-full text-center hover:opacity-90"
+              >
+                Mentor
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="#software-development"
+                className="table-cell w-full text-center align-middle hover:opacity-90"
+              >
+                Software development
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="#footer"
+                className="w-full text-center hover:opacity-90"
+              >
+                Legal
+              </Link>
+            </li>
+          </ul>
         </nav>
       </section>
     </header>
