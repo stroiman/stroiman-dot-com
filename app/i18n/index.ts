@@ -2,9 +2,11 @@ import { createInstance, CustomTypeOptions } from "i18next";
 import resourcesToBackend from "i18next-resources-to-backend";
 import { initReactI18next } from "react-i18next/initReactI18next";
 import { fallbackLng, languages } from "./settings";
+import translation from "./locales/da/translation.json";
+
 export const defaultNS = "translation";
 export type Lang = (typeof languages)[number];
-import translation from "./locales/da/translation.json";
+export type LangParam = { lng: Lang };
 
 declare module "i18next" {
   interface CustomTypeOptions {

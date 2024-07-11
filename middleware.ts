@@ -1,11 +1,10 @@
 import { NextRequest, NextResponse } from "next/server";
 import acceptLanguage from "accept-language";
-import { fallbackLang, languages, cookieName } from "./app/i18n/settings";
+import { fallbackLng, languages, cookieName } from "./app/i18n/settings";
 
-acceptLanguage.languages(languages);
+acceptLanguage.languages(languages as any); // TypeScript is great, except when it itsn't
 
 export const config = {
-  // matcher: '/:lng*'
   matcher: [
     "/((?!api|_next/static|_next/image|assets|favicon.ico|sw.js|site.webmanifest).*)",
   ],
@@ -17,7 +16,7 @@ export function middleware(req: NextRequest) {
     lang = acceptLanguage.get(req.cookies.get(cookieName)!.value);
   }
   if (!lang) lang = acceptLanguage.get(req.headers.get("Accept-Language"));
-  if (!lang) lang = fallbackLang;
+  if (!lang) lang = fallbackLng;
 
   // Redirect if lang in path is not supported
   if (

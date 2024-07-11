@@ -1,7 +1,8 @@
 {
   "nav": {
+    "switchLanguage": "Switch to <0>English</0>",
     "mentoringLinkText": "Mentoring",
-    "softwareDevelopmentLinkText": "Custom Development"
+    "softwareDevelopmentLinkText": "$t(frontpage.softwareDevelopment.headingText)"
   },
   "frontpage": {
     "heroSection": {
@@ -10,6 +11,12 @@
     "mentoring": {
       "headingText": "Mentoring",
       "sectionText": "I provide one-on-one mentoring sessions"
+    },
+    "softwareDevelopment": {
+      "headingText": "Software Development",
+      "paragraph1": "Are you looking for someone to build a software solution for you? Or do you need new skillede developers for your existing team?",
+      "paragraph2": "TODO",
+      "paragraph3": "TODO"
     }
   }
 }
