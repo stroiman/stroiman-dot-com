@@ -17,3 +17,19 @@ export default function SvgImageContainer({
     />
   );
 }
+
+export function WrapSvg<T extends { className?: string }>(
+  Component: React.ComponentType<T>,
+) {
+  return function Wrapped(props: T) {
+    return (
+      <Component
+        {...props}
+        className={clsx(
+          "rounded-xl border-2 border-current bg-gradient-radial dark:border-gray-600 dark:from-zinc-500 dark:text-black",
+          props.className,
+        )}
+      />
+    );
+  };
+}

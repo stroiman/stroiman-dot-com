@@ -6,7 +6,7 @@ acceptLanguage.languages(languages as any); // TypeScript is great, except when 
 
 export const config = {
   matcher: [
-    "/((?!api|_next/static|_next/image|assets|favicon.ico|sw.js|site.webmanifest).*)",
+    "/((?!api|_next/static|_next/image|assets|favicon|sw.js|site.webmanifest).*)",
   ],
 };
 

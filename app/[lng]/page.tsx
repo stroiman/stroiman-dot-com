@@ -10,7 +10,11 @@ import LanguageSwitcher from "./language-switcher";
 import Links from "./links";
 import Para from "./para";
 import { Programmer } from "../ui/image-svgs";
-import SvgImageContainer from "./svg-image-container";
+import { WrapSvg } from "./svg-image-container";
+
+const ProgrammerWrapped = WrapSvg(Programmer);
+const EducationWrapped = WrapSvg(Education);
+const ProgrammerWorkingWrapped = WrapSvg(ProgrammerWorking);
 
 export default async function Page({ params }: { params: { lng: Lang } }) {
   const { lng } = params;
@@ -98,10 +102,7 @@ export default async function Page({ params }: { params: { lng: Lang } }) {
               <Para>{t("frontpage.softwareDevelopment.paragraph3")}</Para>
             </div>
 
-            <SvgImageContainer
-              component={ProgrammerWorking}
-              className="sm:w-1/3"
-            />
+            <ProgrammerWorkingWrapped className="sm:w-1/3" />
           </div>
           {/* Arrow forward
           <a
@@ -145,9 +146,9 @@ export default async function Page({ params }: { params: { lng: Lang } }) {
         <Section id="courses" heading={t("frontpage.courses.headingText")}>
           <div className="flex flex-col gap-8 sm:flex-row">
             <figure className="sm:w-1/3">
-              <Education
+              <EducationWrapped
                 title={t("frontpage.courses.imageCaption")}
-                className="dark:bg-gradient-radial dark:from-zinc-500 dark:text-black"
+                className="mb-2"
               />
               <figcaption className="text-body text-xs" aria-hidden>
                 {t("frontpage.courses.imageCaption")}
@@ -166,9 +167,9 @@ export default async function Page({ params }: { params: { lng: Lang } }) {
             <div className="flex flex-col gap-4 sm:w-2/3">
               <Para>{t("frontpage.training.paragraph1")}</Para>
             </div>
-            <Programmer
+            <ProgrammerWrapped
               title={t("frontpage.training.imageTitle")}
-              className="sm:w-1/3 dark:bg-gradient-radial dark:from-zinc-500 dark:text-black"
+              className="sm:w-1/3"
             />
           </div>
         </Section>
