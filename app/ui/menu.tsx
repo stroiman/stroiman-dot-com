@@ -26,8 +26,8 @@ export default function Menu({
     setShowMenu(false);
   };
   return (
-    <header className="sticky top-0 z-10 bg-teal-700 text-white">
-      <div className="relative z-20 mx-auto max-w-4xl bg-teal-700 px-4 py-2">
+    <header className="bg-primary-800 sticky top-0 z-10 text-white">
+      <div className="bg-primary-800 relative z-20 mx-auto max-w-4xl px-4 py-2">
         <section className="flex items-center justify-between">
           <Link href={`/${lng}/#top`} className="text-2xl font-medium">
             <Logo className="mr-1 inline h-[1em]" title="Logo" />
