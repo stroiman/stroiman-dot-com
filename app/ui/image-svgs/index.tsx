@@ -663,7 +663,7 @@ export const Teacher = (props: { className?: string }) => (
     </metadata>
     <g
       transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-      fill="#000000"
+      fill="currentcolor"
       stroke="none"
     >
       <path
@@ -901,7 +901,7 @@ export const Logo = (props: SVGWithTitleProps) => (
     viewBox="0 0 1848.000000 1372.000000"
     fill="currentcolor"
     strokeWidth="50"
-    stroke="#FFFFFF"
+    stroke="currentcolor"
   >
     <SvgTitle {...props} />
     <path
