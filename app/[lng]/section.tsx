@@ -41,11 +41,6 @@ export function HeroSection(props: {
           {children}
         </p>
       </div>
-      <Programmer
-        className="text-slate-700 sm:w-1/2"
-        role="img"
-        title="illustration of a programmer wearing headphones"
-      />
     </section>
   );
 }

@@ -1,7 +1,8 @@
 {
   "nav": {
     "switchLanguage": "Skift til <0>dansk</0>",
-    "mentoringLinkText": "mentoring",
+    "coursesLinkText": "Kurser",
+    "trainingLinkText": "Træning",
     "softwareDevelopmentLinkText": "$t(frontpage.softwareDevelopment.headingText)"
   },
   "links": {
@@ -12,8 +13,15 @@
     "heroSection": {
       "headingText": "Freelance Software udvikler med <0>mere end 25 års erfaring</0>"
     },
-    "mentoring": {
-      "headingText": "Kurser og træning",
+    "softwareDevelopment": {
+      "headingText": "Software Development",
+      "imageTitle": "Illustration af en programmør ved sin computer",
+      "paragraph1": "Skal I have bygget software? Eller mangler I kompetente udviklere til jeres eksisterende team?",
+      "paragraph2": "Gennem 25år har jeg opbygget kendskab til en bred vifte af teknologier og udviklings-paradigmer. Jeg er udøver af TDD (Test-driven development), en ofte misforstået metode, men når den anvendes rigtigt leder til et mere vedligeholdelsesvenligt system, færre fejl OG højere produktivitet allerede på kort bane.",
+      "paragraph3": "Jeg er vant til at arbejde i større virksomheder, og har fokus på de forretningsprocesser, der skal optimeres."
+    },
+    "courses": {
+      "headingText": "Kurser",
       "section1": {
         "headingText": "Kurser",
         "paragraph1": "Har I en udviklingsafdeling, der skal lære ny teknologi? Er jeres .NET app site ikke længere tidssvarent? Jeg tilbyder skræddersyede kurser, der kan hjælpe jeres afdeling på vej."
@@ -25,11 +33,10 @@
       },
       "imageCaption": "Et billede af en underviser, der laver djævle-tegnet? AI har stadig mange begrænsninger."
     },
-    "softwareDevelopment": {
-      "headingText": "Software Development",
-      "paragraph1": "Skal I have bygget software? Eller mangler I kompetente udviklere til jeres eksisterende team?",
-      "paragraph2": "Gennem 25år har jeg opbygget kendskab til en bred vifte af teknologier og udviklings-paradigmer. Jeg er udøver af TDD (Test-driven development), en ofte misforstået metode, men når den anvendes rigtigt leder til et mere vedligeholdelsesvenligt system, færre fejl OG højere produktivitet allerede på kort bane.",
-      "paragraph3": "Jeg er vant til at arbejde i større virksomheder, og har fokus på de forretningsprocesser, der skal optimeres."
+    "training": {
+      "headingText": "Træning og mentoring",
+      "imageTitle": "Illustration af en programmør i et online møde",
+      "paragraph1": "Med online pair programming sessioner kan jeg hjælpe jer på vej med ny teknologi, eller lære jer at blive mere effektive gennem anvendelsen af TDD."
     }
   }
 }

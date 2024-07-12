@@ -19,7 +19,7 @@ const config: Config = {
       colors: {
         primary: colors.teal,
         secondary: colors.zinc,
-        body: colors.zinc["500"],
+        body: colors.zinc,
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

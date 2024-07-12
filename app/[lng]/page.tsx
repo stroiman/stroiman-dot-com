@@ -9,6 +9,7 @@ import Education from "../ui/image-svgs/education";
 import LanguageSwitcher from "./language-switcher";
 import Links from "./links";
 import Para from "./para";
+import { Programmer } from "../ui/image-svgs";
 
 export default async function Page({ params }: { params: { lng: Lang } }) {
   const { lng } = params;
@@ -32,18 +33,26 @@ export default async function Page({ params }: { params: { lng: Lang } }) {
                 </li>
                 <li>
                   <Link
-                    href="#mentoring"
-                    className="w-full text-center hover:opacity-90"
-                  >
-                    Mentor
-                  </Link>
-                </li>
-                <li>
-                  <Link
                     href="#software-development"
                     className="table-cell w-full text-center align-middle hover:opacity-90"
                   >
                     Software development
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="#courses"
+                    className="w-full text-center hover:opacity-90"
+                  >
+                    {t("nav.coursesLinkText")}
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="#training"
+                    className="w-full text-center hover:opacity-90"
+                  >
+                    {t("nav.trainingLinkText")}
                   </Link>
                 </li>
                 <li>
@@ -63,8 +72,11 @@ export default async function Page({ params }: { params: { lng: Lang } }) {
         <Link href="#software-development" className="hover:opacity-90">
           {t("nav.softwareDevelopmentLinkText")}
         </Link>
-        <Link href="#mentoring" className="hover:opacity-90">
-          {t("nav.mentoringLinkText")}
+        <Link href="#courses" className="hover:opacity-90">
+          {t("nav.coursesLinkText")}
+        </Link>
+        <Link href="#training" className="hover:opacity-90">
+          {t("nav.trainingLinkText")}
         </Link>
         <div className="inline space-x-2">
           <Links lng={lng} />
@@ -100,7 +112,10 @@ export default async function Page({ params }: { params: { lng: Lang } }) {
               <Para>{t("frontpage.softwareDevelopment.paragraph2")}</Para>
               <Para>{t("frontpage.softwareDevelopment.paragraph3")}</Para>
             </div>
-            <ProgrammerWorking className="sm:w-1/3" />
+            <ProgrammerWorking
+              className="sm:w-1/3"
+              title={t("frontpage.softwareDevelopment.imageTitle")}
+            />
           </div>
           {/* Arrow forward
           <a
@@ -141,26 +156,31 @@ export default async function Page({ params }: { params: { lng: Lang } }) {
 
         <hr className="mx-auto w-1/2 bg-black dark:bg-white" />
 
-        <Section id="mentoring" heading={"Kurser og træning"}>
+        <Section id="courses" heading={t("frontpage.courses.headingText")}>
           <div className="flex flex-col gap-8 sm:flex-row">
             <figure className="sm:w-1/3">
-              <Education title={t("frontpage.mentoring.imageCaption")} />
+              <Education title={t("frontpage.courses.imageCaption")} />
               <figcaption className="text-body text-xs" aria-hidden>
-                {t("frontpage.mentoring.imageCaption")}
+                {t("frontpage.courses.imageCaption")}
               </figcaption>
             </figure>
             <div className="flex flex-col gap-4 sm:w-2/3">
-              <h3 className="font-heading text-2xl font-medium md:font-normal">
-                {t("frontpage.mentoring.section1.headingText")}
-              </h3>
-              <Para>{t("frontpage.mentoring.section1.paragraph1")}</Para>
+              <Para>{t("frontpage.courses.section1.paragraph1")}</Para>
 
-              <h3 className="font-heading text-2xl font-normal md:font-normal">
-                {t("frontpage.mentoring.section2.headingText")}
-              </h3>
-              <Para>{t("frontpage.mentoring.section2.paragraph1")}</Para>
-              <Para>{t("frontpage.mentoring.section2.paragraph2")}</Para>
+              <Para>{t("frontpage.courses.section2.paragraph2")}</Para>
             </div>
+          </div>
+        </Section>
+
+        <Section id="training" heading={t("frontpage.training.headingText")}>
+          <div className="flex flex-col gap-8 sm:flex-row">
+            <div className="flex flex-col gap-4 sm:w-2/3">
+              <Para>{t("frontpage.training.paragraph1")}</Para>
+            </div>
+            <Programmer
+              title={t("frontpage.training.imageTitle")}
+              className="sm:w-1/3"
+            />
           </div>
         </Section>
       </Main>

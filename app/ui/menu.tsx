@@ -30,7 +30,7 @@ export default function Menu({
       <div className="relative z-20 mx-auto max-w-4xl bg-teal-700 px-4 py-2">
         <section className="flex items-center justify-between">
           <Link href={`/${lng}/#top`} className="text-2xl font-medium">
-            <Logo className="mr-1 inline h-[1em]" />
+            <Logo className="mr-1 inline h-[1em]" title="Logo" />
             stroiman.com
           </Link>
           <div>
