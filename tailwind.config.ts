@@ -1,4 +1,7 @@
+import { Saira_Extra_Condensed } from "next/font/google";
+import { Source_Serif_4 } from "next/font/google";
 import type { Config } from "tailwindcss";
+import colors from "tailwindcss/colors";
 
 const config: Config = {
   content: [
@@ -8,10 +11,36 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        //heading: ['"Source Serif 4"', "Georgia", "serif"],
+        heading: ["var(--source-serif)", "Georgia", "serif"],
+        body: ["Synonym", "system-ui", "sans-serif"],
+      },
+      colors: {
+        primary: colors.fuchsia,
+        secondary: colors.zinc,
+        body: colors.zinc,
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      },
+      gridTemplateColumns: {
+        menu: "auto 1fr",
+      },
+      screens: {
+        widescreen: { raw: "(min-aspect-ratio: 3/2)" },
+        tallscreen: { raw: "(max-aspect-ratio: 13/20)" },
+      },
+      keyframes: {
+        "open-menu": {
+          "0%": { transform: "scaleY(0)" },
+          "100%": { transform: "scaleY(1)" },
+        },
+      },
+      animation: {
+        "open-menu": "open-menu 0.25s ease-in-out forwards",
       },
     },
   },
