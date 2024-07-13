@@ -34,12 +34,14 @@ export function HeroSection(props: {
       className="widescreen:section-min-height tallscreen:section-min-height mb-12 flex scroll-mt-24 flex-col-reverse items-center justify-center gap-8 sm:flex-row"
     >
       <div className="flex flex-col items-center gap-8 text-slate-900 dark:text-white">
-        <h1 className="text-3xl sm:text-5xl">
+        <h1 className="text-4xl font-normal sm:text-5xl sm:font-light">
           Peter Strøiman
           <br />
-          Software Development Expert
+          <span className="text-2xl sm:text-3xl">
+            Software Development Expert
+          </span>
         </h1>
-        <p className="font-heading text-center text-2xl font-normal sm:w-1/2 sm:text-left sm:text-4xl md:font-light">
+        <p className="font-heading text-center text-2xl font-normal sm:w-1/2 sm:text-4xl sm:font-light">
           {heading}
         </p>
         <p className="text-1xl mt-4 max-w-md text-center text-slate-700 dark:text-slate-400">
