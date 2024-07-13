@@ -20,13 +20,15 @@ export async function generateMetadata({ params }: { params: LangParam }) {
   switch (params.lng) {
     case "en":
       return {
-        title: "Peter Strøiman - Freelance Software Developer",
+        title:
+          "Peter Strøiman - Freelance software developer with 25+ years of experience",
         description:
           "Freelance software developer with 25+ years of experience",
         openGraph: {
-          title: "Peter Strøiman",
+          title:
+            "Peter Strøiman - Freelance software developer with 25+ years of experience",
           description:
-            "Freelance software developer with 25+ years of experience",
+            "Freelance software developer with 25+ years of experience, and a specialty in the field of test-driven development. I offer custom development services, courses, mentoring, training.",
           url: "https://stroiman.com/en/",
           siteName: "stroiman.com",
           locale: "en-UK",
@@ -55,12 +57,14 @@ export async function generateMetadata({ params }: { params: LangParam }) {
       };
     default:
       return {
-        title: "Peter Strøiman - Freelance Software Developer",
+        title:
+          "Peter Strøiman - Freelance software udvikler med mere end 25 års erfaring",
         description: "Freelance software udvikler med mere end 25 års erfaring",
         openGraph: {
-          title: "Peter Strøiman",
+          title:
+            "Peter Strøiman - Freelance software udvikler med mere end 25 års erfaring",
           description:
-            "Freelance software udvikler med mere end 25 års erfaring",
+            "Freelance software, der tilbyder udvikling, kurser, mentorordninger. Med stort speciale indenfor test-driven development",
           url: "https://stroiman.com/da/",
           siteName: "stroiman.com",
           locale: "da-DK",

@@ -5,7 +5,8 @@ export const metadata: Metadata = {
   title: "Peter Strøiman - Freelance Software Developer",
   description: "Freelance software udvikler med mere end 25 års erfaring",
   openGraph: {
-    title: "Peter Strøiman",
+    title:
+      "Peter Strøiman - Freelance software udvikler med mere end 25 års erfaring",
     description: "Freelance Software Udvikler",
     url: "https://stroiman.com/da",
     siteName: "stroiman.com",
