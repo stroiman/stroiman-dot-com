@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://stroiman.com"),
   title: "Peter Strøiman - Freelance Software Developer",
   description: "Freelance software udvikler med mere end 25 års erfaring",
   openGraph: {
