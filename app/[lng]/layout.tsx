@@ -117,7 +117,7 @@ export default async function RootLayout({
   params: { lng: Lang };
 }>) {
   const { lng } = params;
-  const { t } = await useTranslation(lng);
+  const { t } = await useTranslation(lng, "translation");
   return (
     <html lang={lng} dir={dir(lng)} className="sm:scroll-smooth">
       <head>
