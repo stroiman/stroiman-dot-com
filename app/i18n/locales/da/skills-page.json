@@ -10,7 +10,7 @@
   "tddSection": {
     "headingText": "TDD",
     "body": "Primarily, I am a practitioner of test-driven development. The process does not only generate more maintainable code; it is also a process that makes me more efficient, due to the reduced amount of time spent debugging",
-    "body2": "The benefit of TDD is only experienced when you write tests coupled to behaviour rather than implementation. Unfortunately, too many write &quot;unit tests&quot; which are so coupled to implementation that you cannot refactor without breaking the tests",
+    "body2": "The benefit of TDD is only experienced when you write tests coupled to behaviour rather than implementation. Unfortunately, too many write \"unit tests\" which are so coupled to implementation that you cannot refactor without breaking the tests",
     "body3": "If you want to learn TDD to improve your efficiency, I can help, e.g. through remote one-on-one training sessions"
   }
 }
