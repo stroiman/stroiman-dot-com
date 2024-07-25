@@ -5,7 +5,7 @@
     "cosmosDb": "What I learned from Cosmos DB is, don't use it. Don't call me if you've chosen Cosmos DB. You call me if you want to learn to be the most efficient you can in developing software; and if that's your goal, you don't choose Cosmos DB"
   },
   "langaugesSection": {
-    "headingText": "Programmeringssprog"
+    "headingText": "Programming languages"
   },
   "tddSection": {
     "headingText": "TDD",
