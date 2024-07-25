@@ -1,9 +1,16 @@
 {
   "nav": {
+    "navLabel": "For dette websted",
     "switchLanguage": "Skift til <0>dansk</0>",
     "coursesLinkText": "Kurser",
+    "homeLinkText": "Hjem",
     "trainingLinkText": "Træning",
-    "softwareDevelopmentLinkText": "$t(frontpage.softwareDevelopment.headingText)"
+    "softwareDevelopmentLinkText": "$t(frontpage.softwareDevelopment.headingText)",
+    "technicalSkillsLinkText": "Kompetencer",
+    "legalLinkText": "Virksomhed"
+  },
+  "pageNav": {
+    "navLabel": "For denne side"
   },
   "links": {
     "githubLinkLabel": "Se min Github side",
