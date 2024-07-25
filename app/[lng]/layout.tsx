@@ -134,7 +134,7 @@ export default async function RootLayout({
         <Menu
           lng={lng}
           submenu={submenu}
-          switcher={<LanguageSwitcher lng={lng} />}
+          languageSwitcher={<LanguageSwitcher lng={lng} />}
           socialLinks={<Links lng={lng} />}
           popup={
             <>

@@ -10,14 +10,14 @@ import HamburgerButton from "./hamburger-button";
 
 export default function Menu({
   lng,
-  switcher,
+  languageSwitcher,
   children,
   submenu,
   socialLinks,
   popup,
 }: {
   lng: Lang;
-  switcher: ReactNode;
+  languageSwitcher: ReactNode;
   socialLinks: ReactNode;
   children?: ReactNode;
   submenu?: ReactNode;
@@ -44,7 +44,7 @@ export default function Menu({
           </section>
           <div className="flex flex-row">
             <div className="flex-grow space-x-6">{submenu}</div>
-            <div className="flex justify-end">{switcher}</div>
+            <div className="flex justify-end">{languageSwitcher}</div>
           </div>
         </div>
       </div>
