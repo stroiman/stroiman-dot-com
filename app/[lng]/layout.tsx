@@ -1,10 +1,23 @@
+import { Trans } from "react-i18next/TransWithoutContext";
+import Menu from "../ui/menu";
+import Link from "next/link";
+import Main from "../ui/main";
+import Section, { HeroSection } from "./section";
+import ProgrammerWorking from "../ui/image-svgs/programmer-working";
+import Education from "../ui/image-svgs/education";
+import LanguageSwitcher from "./language-switcher";
+import Links from "./links";
+import Para from "./para";
+import { Programmer } from "../ui/image-svgs";
+import { WrapSvg } from "./svg-image-container";
+import ArrowForward from "../ui/icons";
 import { dir } from "i18next";
 import type { Metadata } from "next";
 import { Inter, Source_Serif_4 } from "next/font/google";
 import "../globals.css";
 import { clsx } from "clsx";
 import { languages } from "../i18n/settings";
-import { Lang, LangParam } from "../i18n";
+import { Lang, LangParam, useTranslation } from "../i18n";
 
 const inter = Inter({ subsets: ["latin"] });
 const sourceSefif = Source_Serif_4({
@@ -96,12 +109,15 @@ export async function generateMetadata({ params }: { params: LangParam }) {
 
 export default async function RootLayout({
   children,
+  submenu,
   params,
 }: Readonly<{
   children: React.ReactNode;
+  submenu: React.ReactNode;
   params: { lng: Lang };
 }>) {
   const { lng } = params;
+  const { t } = await useTranslation(lng);
   return (
     <html lang={lng} dir={dir(lng)} className="sm:scroll-smooth">
       <head>
@@ -112,10 +128,70 @@ export default async function RootLayout({
           inter.className,
           sourceSefif.className,
 
-          "min-h-screen bg-slate-50 font-light dark:bg-black dark:text-white",
+          "flex min-h-screen flex-col bg-slate-50 font-light dark:bg-black dark:text-white",
         )}
       >
-        {children}
+        <Menu
+          lng={lng}
+          switcher={<LanguageSwitcher lng={lng} />}
+          socialLinks={<Links lng={lng} />}
+          popup={
+            <>
+              <nav className="py-16">
+                <ul className="flex flex-col items-center gap-6 py-2">
+                  <li>
+                    <Link
+                      href="#software-development"
+                      className="table-cell w-full text-center align-middle hover:opacity-90"
+                    >
+                      {t("nav.softwareDevelopmentLinkText")}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="#courses"
+                      className="w-full text-center hover:opacity-90"
+                    >
+                      {t("nav.coursesLinkText")}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="#training"
+                      className="w-full text-center hover:opacity-90"
+                    >
+                      {t("nav.trainingLinkText")}
+                    </Link>
+                  </li>
+                </ul>
+                <Links lng={lng} className="fixed bottom-4 right-4" />
+              </nav>
+            </>
+          }
+        >
+          {submenu}
+        </Menu>
+
+        <Main>{children}</Main>
+        <footer id="footer" className="bg-primary-800 text-xl text-white">
+          <section className="mx-auto flex max-w-4xl flex-col p-4 sm:flex-row sm:justify-between">
+            <address className="text-sm">
+              <h2>Peter Strøiman ApS</h2>
+              CVR: 32290671
+              <br />
+              Email: <a href="mailto:info@stroiman.com">info@stroiman.com</a>
+              <br />
+              Phone: <a href="tel:+4521902103">+45 21 90 21 03</a>
+            </address>
+            {/*
+          <nav className="hidden flex-col gap-2 md:flex" aria-label="footer">
+            <Link href={`${lng}/#top`} className="hover:opacity-90">
+              Back up
+            </Link>
+          </nav>
+          */}
+          </section>
+        </footer>
       </body>
     </html>
   );

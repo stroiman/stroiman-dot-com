@@ -1,7 +1,7 @@
 import { LangParam } from "../../i18n";
 import Main from "@/app/ui/main";
 
-export default function SkillePage() {
+export default function SkillsPage() {
   return (
     <>
       <Main>
