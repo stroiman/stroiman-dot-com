@@ -138,30 +138,30 @@ export default async function RootLayout({
           socialLinks={<Links lng={lng} />}
           popup={
             <>
-              <nav className="py-16">
+              <nav aria-modal={t("nav.navLabel")} className="py-16">
                 <ul className="flex flex-col items-center gap-6 py-2">
                   <li>
                     <Link
-                      href="#software-development"
+                      href={`/${lng}/#top`}
                       className="table-cell w-full text-center align-middle hover:opacity-90"
                     >
-                      {t("nav.softwareDevelopmentLinkText")}
+                      {t("nav.homeLinkText")}
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="#courses"
-                      className="w-full text-center hover:opacity-90"
+                      href={`/${lng}/technical-skills`}
+                      className="table-cell w-full text-center align-middle hover:opacity-90"
                     >
-                      {t("nav.coursesLinkText")}
+                      {t("nav.technicalSkillsLinkText")}
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="#training"
-                      className="w-full text-center hover:opacity-90"
+                      href={`/${lng}/legal`}
+                      className="table-cell w-full text-center align-middle hover:opacity-90"
                     >
-                      {t("nav.trainingLinkText")}
+                      {t("nav.legalLinkText")}
                     </Link>
                   </li>
                 </ul>

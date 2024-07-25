@@ -3,6 +3,7 @@
     "navLabel": "For dette websted",
     "switchLanguage": "Skift til <0>dansk</0>",
     "coursesLinkText": "Kurser",
+    "homeLinkText": "Hjem",
     "trainingLinkText": "Træning",
     "softwareDevelopmentLinkText": "$t(frontpage.softwareDevelopment.headingText)",
     "technicalSkillsLinkText": "Kompetencer",
