@@ -43,9 +43,7 @@ export default function Menu({
             </div>
           </section>
           <div className="flex flex-row">
-            <nav className="hidden flex-grow space-x-6 md:block">
-              {children}
-            </nav>
+            {children}
             <div className="flex justify-end">{switcher}</div>
           </div>
         </div>

@@ -169,7 +169,12 @@ export default async function RootLayout({
             </>
           }
         >
-          {submenu}
+          <nav
+            aria-label={t("pageNav.navLabel")}
+            className="hidden flex-grow space-x-6 md:block"
+          >
+            {submenu}
+          </nav>
         </Menu>
 
         <Main>{children}</Main>
