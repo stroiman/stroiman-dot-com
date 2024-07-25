@@ -12,6 +12,7 @@ export default function Menu({
   lng,
   switcher,
   children,
+  submenu,
   socialLinks,
   popup,
 }: {
@@ -19,6 +20,7 @@ export default function Menu({
   switcher: ReactNode;
   socialLinks: ReactNode;
   children?: ReactNode;
+  submenu?: ReactNode;
   popup?: ReactNode;
 }) {
   const [showMenu, setShowMenu] = useState(false);
@@ -37,13 +39,11 @@ export default function Menu({
               <Logo className="mr-1 inline h-[1em]" title="Logo" />
               stroiman.com
             </Link>
-            <div>
-              <HamburgerButton onClick={onClick} showMenu={showMenu} />
-              <span className="hidden md:inline">{socialLinks}</span>
-            </div>
+            <nav className="hidden space-x-6 md:block">{children}</nav>
+            <HamburgerButton onClick={onClick} showMenu={showMenu} />
           </section>
           <div className="flex flex-row">
-            {children}
+            <div className="flex-grow space-x-6">{submenu}</div>
             <div className="flex justify-end">{switcher}</div>
           </div>
         </div>

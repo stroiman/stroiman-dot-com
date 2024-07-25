@@ -4,7 +4,9 @@
     "switchLanguage": "Switch to <0>English</0>",
     "coursesLinkText": "Courses",
     "trainingLinkText": "Training",
-    "softwareDevelopmentLinkText": "$t(frontpage.softwareDevelopment.headingText)"
+    "softwareDevelopmentLinkText": "$t(frontpage.softwareDevelopment.headingText)",
+    "technicalSkillsLinkText": "Skills",
+    "legalLinkText": "Legal"
   },
   "pageNav": {
     "navLabel": "Page"

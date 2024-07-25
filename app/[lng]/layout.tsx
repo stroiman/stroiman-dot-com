@@ -128,11 +128,12 @@ export default async function RootLayout({
           inter.className,
           sourceSefif.className,
 
-          "flex min-h-screen flex-col bg-slate-50 font-light dark:bg-black dark:text-white",
+          "flex min-h-screen flex-col items-stretch bg-slate-50 font-light dark:bg-black dark:text-white",
         )}
       >
         <Menu
           lng={lng}
+          submenu={submenu}
           switcher={<LanguageSwitcher lng={lng} />}
           socialLinks={<Links lng={lng} />}
           popup={
@@ -173,7 +174,18 @@ export default async function RootLayout({
             aria-label={t("pageNav.navLabel")}
             className="hidden flex-grow space-x-6 md:block"
           >
-            {submenu}
+            <Link
+              href={`/${lng}/technical-skills`}
+              className="hover:opacity-90"
+            >
+              {t("nav.technicalSkillsLinkText")}
+            </Link>
+            <Link href={`/${lng}/legal`} className="hover:opacity-90">
+              {t("nav.legalLinkText")}
+            </Link>
+            <div className="inline space-x-2">
+              <Links lng={lng} />
+            </div>
           </nav>
         </Menu>
 
