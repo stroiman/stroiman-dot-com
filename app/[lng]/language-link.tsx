@@ -15,9 +15,10 @@ export default function LanguageLink({
 }) {
   const onClick = (e: React.SyntheticEvent) => {
     const parts = window.location.pathname.split("/");
-    parts[1] = lng;
     const hash = window.location.hash;
-    window.location.assign(`${parts.join("/")}${hash}`);
+    parts[1] = lng;
+    const newLocation = `${parts.join("/")}${hash}`;
+    window.location.assign(newLocation);
     e.preventDefault();
   };
   return (
