@@ -1,4 +1,8 @@
-import { ReactNode } from "react";
+import { ReactNode, JSX } from "react";
+import React from "react";
+import { Heading } from ".";
+
+const H1 = ({ children }: { children: ReactNode }) => <h1>{children}</h1>;
 
 export default function PageLayout({
   heading,
@@ -9,9 +13,9 @@ export default function PageLayout({
 }) {
   return (
     <>
-      <h1 className="pb-4 text-4xl font-bold text-slate-900 sm:text-left sm:text-5xl dark:text-white">
+      <Heading component="h1" className="pb-4 text-center sm:text-left">
         {heading}
-      </h1>
+      </Heading>{" "}
       {children}
     </>
   );
