@@ -17,7 +17,7 @@ const config: Config = {
         body: ["Synonym", "system-ui", "sans-serif"],
       },
       colors: {
-        primary: colors.teal,
+        primary: colors.fuchsia,
         secondary: colors.zinc,
         body: colors.zinc,
       },

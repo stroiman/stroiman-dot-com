@@ -3,6 +3,8 @@ import resourcesToBackend from "i18next-resources-to-backend";
 import { initReactI18next } from "react-i18next/initReactI18next";
 import { fallbackLng, languages } from "./settings";
 import translation from "./locales/da/translation.json";
+import legalPage from "./locales/da/legal-page.json";
+import skillsPage from "./locales/da/skills-page.json";
 
 export const defaultNS = "translation";
 export type Lang = (typeof languages)[number];
@@ -13,6 +15,8 @@ declare module "i18next" {
     defaultNS: "translation";
     resources: {
       translation: typeof translation;
+      ["legal-page"]: typeof legalPage;
+      ["skills-page"]: typeof skillsPage;
     };
   }
 }

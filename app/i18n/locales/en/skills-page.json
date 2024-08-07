@@ -1,0 +1,16 @@
+{
+  "headingText": "Technical skills",
+  "dataSection": {
+    "headingText": "Data and integration services",
+    "cosmosDb": "What I learned from Cosmos DB is, don't use it. Don't call me if you've chosen Cosmos DB. You call me if you want to learn to be the most efficient you can in developing software; and if that's your goal, you don't choose Cosmos DB"
+  },
+  "langaugesSection": {
+    "headingText": "Programming languages"
+  },
+  "tddSection": {
+    "headingText": "TDD",
+    "body": "Først of fremest, er jeg udøver af Test-Driven Development. Ikke nok med at en god TDD process resulterer i kode, der er nemmere at vedligeholde; selve processen er bare mere effektiv, da jeg sparer meget tid på debugging",
+    "body2": "Men at få de gavnlige effekter af TDD kræver at man skriver tests der reflekterer systemets virkemåde. Alt for mange skriver \"unit tests\", der er koblet til implementationsdetaljer, og netop derfor bliver koden IKKE mere vedligeholdelsesvenlig; da man ikke kan rette i kode uden at tests fejler.",
+    "body3": "Hvis du vil lære hvordan TDD kan hjælpe dig med at få en mere effektiv udvikling, så hjælper jeg gerne"
+  }
+}

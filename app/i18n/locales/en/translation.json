@@ -1,9 +1,16 @@
 {
   "nav": {
+    "navLabel": "Site",
     "switchLanguage": "Switch to <0>English</0>",
     "coursesLinkText": "Courses",
+    "homeLinkText": "Home",
     "trainingLinkText": "Training",
-    "softwareDevelopmentLinkText": "$t(frontpage.softwareDevelopment.headingText)"
+    "softwareDevelopmentLinkText": "$t(frontpage.softwareDevelopment.headingText)",
+    "technicalSkillsLinkText": "Skills",
+    "legalLinkText": "Legal"
+  },
+  "pageNav": {
+    "navLabel": "Page"
   },
   "links": {
     "githubLinkLabel": "Go to my github profile",
@@ -34,7 +41,7 @@
       "imageCaption": "An illustration of a techer performing the sign of the horns? AI still has its limitations"
     },
     "training": {
-      "headingText": "Training and mentoring",
+      "headingText": "Training and Mentoring",
       "imageTitle": "Illustration af en programmør i et online møde",
       "paragraph1": "With the aid of pair programming session I can support your journey to a new technology stack, or teach improved efficiency by properly applying TDD"
     }

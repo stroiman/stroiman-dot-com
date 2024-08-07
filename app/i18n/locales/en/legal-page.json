@@ -1,0 +1,5 @@
+{
+  "headingText": "Company Information",
+  "bodyText": "I operate from a Danish registered company.",
+  "regNo": "<0>Company registration no.</0> <1>{{regNo}}</1>"
+}
