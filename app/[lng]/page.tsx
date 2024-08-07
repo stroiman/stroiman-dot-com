@@ -117,41 +117,6 @@ export default async function Page({ params }: { params: { lng: Lang } }) {
               title={t("frontpage.softwareDevelopment.imageTitle")}
             />
           </div>
-          {/* Arrow forward
-          <a
-            href={`/${lng}/technical-skills`}
-            className="inline-flex items-center justify-center rounded-lg bg-gray-50 p-5 text-base font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
-          >
-            <span>Læs mere om mine tekniske kompetencer</span>
-            <ArrowForward />
-          </a>
-
-*/}
-          {/*
-          <ul className="mx-auto my-12 flex list-none flex-col items-center gap-8 sm:flex-row">
-            <li className="px2 flex w-2/3 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white py-6 shadow-xl sm:w-5/6 dark:border-gray-100 dark:bg-black">
-              <h3 className="text-center text-3xl text-slate-900 dark:text-white">
-                Expore
-              </h3>
-              <p className="mt-2 hidden text-center text-3xl text-slate-500 sm:block">
-                Here is some more information visible on larger screen.
-              </p>
-              <p className="mt-2 text-center text-3xl text-slate-500 sm:hidden">
-                Here is some more information
-              </p>
-            </li>
-            <li className="px2 flex w-2/3 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white py-6 shadow-xl sm:w-5/6 dark:border-gray-100 dark:bg-black">
-              <h3 className="text-center text-3xl text-slate-900 dark:text-white">
-                Expore
-              </h3>
-              <p className="mt-2 hidden text-center text-3xl text-slate-500 sm:block">
-                Here is some more information
-              </p>
-              <p className="mt-2 text-center text-3xl text-slate-500 sm:hidden">
-                Here is some more information
-              </p>
-            </li>
-          </ul> */}
         </Section>
 
         <hr className="mx-auto w-1/2 bg-black dark:bg-white" />
@@ -200,13 +165,6 @@ export default async function Page({ params }: { params: { lng: Lang } }) {
             <br />
             Phone: <a href="tel:+4521902103">+45 21 90 21 03</a>
           </address>
-          {/*
-          <nav className="hidden flex-col gap-2 md:flex" aria-label="footer">
-            <Link href={`${lng}/#top`} className="hover:opacity-90">
-              Back up
-            </Link>
-          </nav>
-          */}
         </section>
       </footer>
     </>
