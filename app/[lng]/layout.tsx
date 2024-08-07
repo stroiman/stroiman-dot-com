@@ -200,13 +200,6 @@ export default async function RootLayout({
               <br />
               Phone: <a href="tel:+4521902103">+45 21 90 21 03</a>
             </address>
-            {/*
-          <nav className="hidden flex-col gap-2 md:flex" aria-label="footer">
-            <Link href={`${lng}/#top`} className="hover:opacity-90">
-              Back up
-            </Link>
-          </nav>
-          */}
           </section>
         </footer>
       </body>
