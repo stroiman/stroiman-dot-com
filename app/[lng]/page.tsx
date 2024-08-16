@@ -14,12 +14,11 @@ import { WrapSvg } from "./svg-image-container";
 import ArrowForward from "../ui/icons";
 import { ReactChild } from "react";
 import clsx from "clsx";
+import { SectionDiv } from "./components";
 
 const ProgrammerWrapped = WrapSvg(Programmer);
 const EducationWrapped = WrapSvg(Education);
 const ProgrammerWorkingWrapped = WrapSvg(ProgrammerWorking);
-
-const SectionDiv = () => <hr className="mx-auto w-1/2 border-current" />;
 
 const TextAndImage = ({
   Image,

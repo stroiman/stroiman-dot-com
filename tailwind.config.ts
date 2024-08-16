@@ -16,12 +16,16 @@ const config: Config = {
         heading: ["var(--source-serif)", "Georgia", "serif"],
         body: ["Synonym", "system-ui", "sans-serif"],
       },
+      spacing: {
+        target: "6rem",
+      },
       colors: {
         primary: colors.fuchsia,
         secondary: colors.zinc,
         body: colors.zinc,
         em: colors.indigo[700],
         "em-dark": colors.indigo[300],
+        muted: colors.neutral[500],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -31,9 +35,9 @@ const config: Config = {
       gridTemplateColumns: {
         menu: "auto 1fr",
       },
-      scroll: {
-        normal: "scroll-mt-24",
-      },
+      //scroll: {
+      //  normal: "scroll-mt-24",
+      //},
       screens: {
         widescreen: { raw: "(min-aspect-ratio: 3/2)" },
         tallscreen: { raw: "(max-aspect-ratio: 13/20)" },

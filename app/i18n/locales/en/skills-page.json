@@ -1,5 +1,6 @@
 {
   "headingText": "Technical skills",
+  "leadingText": "I have highlighted some specific skills on the top of the page. <0>Scroll down</0> to see the full list of technical skills.",
   "dataSection": {
     "headingText": "Data and integration services",
     "cosmosDb": "What I learned from Cosmos DB is, don't use it. Don't call me if you've chosen Cosmos DB. You call me if you want to learn to be the most efficient you can in developing software; and if that's your goal, you don't choose Cosmos DB"
@@ -12,5 +13,23 @@
     "body": "Primarily, I am a practitioner of test-driven development. The process does not only generate more maintainable code; it is also a process that makes me more efficient, due to the reduced amount of time spent debugging",
     "body2": "The benefit of TDD is only experienced when you write tests coupled to behaviour rather than implementation. Unfortunately, too many write \"unit tests\" which are so coupled to implementation that you cannot refactor without breaking the tests",
     "body3": "If you want to learn TDD to improve your efficiency, I can help, e.g. through remote one-on-one training sessions"
+  },
+  "javascriptSection": {
+    "headingText": "JavaScript/TypeScript",
+    "p1": "JavaScript can be a very <0>powerful language</0> when you understand it, and it's difficult avoiding having to deal with JavaScript as a developer today; as well as TypeScript, a type system build on top of JavaScript. Not just for web-application development; many modern applications are based on <1>Electron</1><2>[1]</2>, also requiring JavaScript knowledge",
+    "p2": "But JavaScript is very different from other languages like C# or Java, although some things look deceptively similar. E.g. The <0>class</0> keyword makes object-oriented programmin look very similar to those two languages; but in JavaScript, classes really doesn't exist. The keyword is merely <2>syntactic sugar</2> on top of the underlying mechanisms used before <3>ES6</3>. The object-oriented execution model implementing polymorphism through inheritence is <2>simulated</2> by the <1>prototype chain</1>. ",
+    "p3": "With more than 15 years of experience with JavaScript as well as C# I both understand how JavaScript works; but also how it's different from languages like C# and Java; both in terms of code, and code structure.",
+    "p4": "This places me in a unique position to help already experienced teams that are starting a journey of web-application development."
+  },
+  "powerfulSection": {
+    "headingText": "Powerful programming languages",
+    "p1": "When I talk about a language being <0>powerful</0>, I do not talk about execution speed, but the ability for the developer has to quickly and succinctly express intent in executable code.",
+    "p2": "Very few programs actually need the execution speed of C++ or Rust; so for most projects, the productivity penalty associated with these languages would make them a poor choice. Video games, or at least the graphics rendering engine, and training the humongous neural networks powering moden generative AI fall into this category.",
+    "p3": "I personally prefer to choose languages that provide a sensible combination of productivity and the safety relevant for the project (or the ability to maintin the code over a long period of time).",
+    "p4": "In Paul Graham's essay \"Beating the Averages\", he describes how they were able to beat the competition because they had written their system using the most powerful programming language, <0>LISP</0>. And interestingly, the risk assessment of a new competitor on the market was primarily based on their technical job listings:"
+  },
+  "electronSamples": {
+    "electronExamplesHeading": "Eksempler på kendte applikationer bygget på Electron",
+    "atom": "In fact, Electron was originally build for Atom. This is why you sometimes hear that VS code is based on Atom. It's because it's based on Electron, but because the editor itself is based on Atom"
   }
 }

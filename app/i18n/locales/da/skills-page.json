@@ -1,5 +1,6 @@
 {
   "headingText": "Tekniske kompetencer",
+  "leadingText": "Jeg har fremhævet specifikke værktøjer i min værktøjskasse med længere forklaring, samt egne personlige holdninger. <0>Længere nede</0> er en mere fyldestgørende liste af tekniske kompetencer.",
   "dataSection": {
     "headingText": "Data- og integrations services",
     "cosmosDb": "Jeg har Cosmos DB erfaring, og det er relevant når jeg siger, lad være med at vælge det. I skal ikke ringe, hvis I allerede har valgt Cosmos DB. I ringer til mig, hvis I gerne vil lære at få den mest effektive softwareudvikling. Og hvis det er målet, så vælger I ikke Cosmos DB"
@@ -12,5 +13,23 @@
     "body": "Først of fremest, er jeg udøver af Test-Driven Development. Ikke nok med at en god TDD process resulterer i kode, der er nemmere at vedligeholde; selve processen er bare mere effektiv, da jeg sparer meget tid på debugging",
     "body2": "Men at få de gavnlige effekter af TDD kræver at man skriver tests der reflekterer systemets virkemåde. Alt for mange skriver \"unit tests\", der er koblet til implementationsdetaljer, og netop derfor bliver koden IKKE mere vedligeholdelsesvenlig; da man ikke kan rette i kode uden at tests fejler.",
     "body3": "Hvis du vil lære hvordan TDD kan hjælpe dig med at få en mere effektiv udvikling, så hjælper jeg gerne"
+  },
+  "javascriptSection": {
+    "headingText": "JavaScript/TypeScript",
+    "p1": "Når man har lært JavaScript kan det være et virkeligt <0>effektivt programmeringssprog</0>, og det er svært at komme uden om som udvikler i dag. Ikke kun på grund af web udvikling. Flere of flere applikationer er baseret på <1>Electron</1><2>[1]</2>, hvilket også kræver JavaScript kundskab.",
+    "p2": "Men JavaScript er meget forskellig fra sprog om C# eller Java, selvom det på overfladen kan se besnærende ens ud. Fx. <0>class</0> nøgleordet ligner det tilsvarende fra C# og Java. Men i JavaScript eksisterer der i virkeligheden ikke klasser. Nøgleorder er blot <2>syntactic sugar</2> over de underliggende mekanismer, der eksisterede før <3>ES6</3>. Den objeket-orienterede eksekveringsmodel med polymorfisme gennem arv er <2>simuleret</2> af den underliggende mekanisme: <1>prototype chain</1>.",
+    "p3": "Med mere end 15 års erfaring med både JavaScript of C# forstår jeg både hvordan JavaScript virker, men også hvordan det er forskelligt fra sprog som C# og Java.",
+    "p4": "Det gør mig til et værdifult bidrag til et allerede erfarent team, der skal i gang med web-udvikling."
+  },
+  "powerfulSection": {
+    "headingText": "Effektive programmeringssprog",
+    "p1": "Når jeg beskriver et programmeringssprog som <0>effektivs</0>, så refererer jeg ikke til eksekveringshastighed, men hvordan det hjælper udviklere med simpelt og effektivt at udtrykke hensigt i kode.",
+    "p2": "Meget få system kræver den eksekveringshastighed man får fra fx. C++ eller Rust. På de fleste projekter vil tabet af produktivitet fra disse gøre dem til dårlige valg. Spil, eller i hvert fald den grafiske motor, eller traæningen af de massive neurale netværk, der er motoren bag moderne generative AI er nogle af de få undtagelser.",
+    "p3": "Personligt foretrækker jeg en værktøjskasse, der tilbyder en fornuftig balance mellem rå produktivitet og evne til at vedligeholde systemet over længere tid",
+    "p4": "I artiklen \"Beating the Averages\" beskriver Paul Graham hvordan de var i stand til at slå alle konkurenter fordi de havde anvendt det mest effektive programmeringssprog, <0>LISP</0>. Når nye konkurenter opstod på markedet, bestod risikoanalysen primært at vurdere hvilke tekniske kompetencer de efterspurgte i jobopslag. De var ikke bekymret for konkurenter, der søgte C++ eller Java udviklere. De var lidt mere bekymrede for konkurenter, der søgte Perl eller Python udviklere."
+  },
+  "electronSamples": {
+    "electronExamplesHeading": "Eksempler på kendte applikationer bygget på Electron: ",
+    "atom": "Faktisk blev Electron bygget til Atom. Det er i virkeligheden derfor man nogle gange hører, at VSCode er baseret på Atom. Fordi, det er baseret på Electron, og ikke fordi sele editoren er baseret på Atom"
   }
 }
