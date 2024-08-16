@@ -81,7 +81,7 @@ export default async function SkillsPage({ params }: { params: LangParam }) {
         </SkillSection>
 
         <SkillSection
-          heading="Powerful programming languages"
+          heading={t("powerfulSection.headingText")}
           headingId="powerful-programming-languages"
         >
           <p>
