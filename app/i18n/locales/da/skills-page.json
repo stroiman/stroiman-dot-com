@@ -9,8 +9,8 @@
   },
   "tddSection": {
     "headingText": "TDD",
-    "body": "Primarily, I am a practitioner of test-driven development. The process does not only generate more maintainable code; it is also a process that makes me more efficient, due to the reduced amount of time spent debugging",
-    "body2": "The benefit of TDD is only experienced when you write tests coupled to behaviour rather than implementation. Unfortunately, too many write \"unit tests\" which are so coupled to implementation that you cannot refactor without breaking the tests",
-    "body3": "If you want to learn TDD to improve your efficiency, I can help, e.g. through remote one-on-one training sessions"
+    "body": "Først of fremest, er jeg udøver af Test-Driven Development. Ikke nok med at en god TDD process resulterer i kode, der er nemmere at vedligeholde; selve processen er bare mere effektiv, da jeg sparer meget tid på debugging",
+    "body2": "Men at få de gavnlige effekter af TDD kræver at man skriver tests der reflekterer systemets virkemåde. Alt for mange skriver \"unit tests\", der er koblet til implementationsdetaljer, og netop derfor bliver koden IKKE mere vedligeholdelsesvenlig; da man ikke kan rette i kode uden at tests fejler.",
+    "body3": "Hvis du vil lære hvordan TDD kan hjælpe dig med at få en mere effektiv udvikling, så hjælper jeg gerne"
   }
 }
