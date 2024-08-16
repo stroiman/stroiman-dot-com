@@ -6,7 +6,7 @@ export default async function Submenu({ params }: { params: LangParam }) {
   const { lng } = params;
   const { t } = await useTranslation(lng);
   return (
-    <>
+    <div className="hidden space-x-6 md:block">
       <Link href="#software-development" className="hover:opacity-90">
         {t("nav.softwareDevelopmentLinkText")}
       </Link>
@@ -16,6 +16,6 @@ export default async function Submenu({ params }: { params: LangParam }) {
       <Link href="#training" className="hover:opacity-90">
         {t("nav.trainingLinkText")}
       </Link>
-    </>
+    </div>
   );
 }

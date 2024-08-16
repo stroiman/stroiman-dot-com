@@ -34,7 +34,10 @@ export function HeroSection(props: {
       id={id}
       className="widescreen:section-min-height tallscreen:section-min-height mb-12 flex scroll-mt-24 flex-col-reverse items-center justify-center gap-8 sm:flex-row"
     >
-      <div className="flex flex-col items-center gap-8 text-slate-900 dark:text-white">
+      <div
+        className="flex flex-col items-center gap-8"
+        //text-slate-900 dark:text-white"
+      >
         <Heading component="h1">
           Peter Strøiman
           <br />

@@ -127,8 +127,7 @@ export default async function RootLayout({
         className={clsx(
           inter.className,
           sourceSefif.className,
-
-          "flex min-h-screen flex-col items-stretch bg-slate-50 font-light dark:bg-black dark:text-white",
+          "flex min-h-screen flex-col bg-slate-50 bg-gradient-to-br from-orange-100 to-slate-200 font-light text-slate-900 dark:bg-black dark:from-orange-950 dark:to-slate-900 dark:text-white",
         )}
       >
         <Menu
@@ -190,7 +189,11 @@ export default async function RootLayout({
         </Menu>
 
         <Main>{children}</Main>
-        <footer id="footer" className="bg-primary-800 text-xl text-white">
+
+        <footer
+          id="footer"
+          className="border-t border-t-black pt-4 text-xl dark:border-t-white"
+        >
           <section className="mx-auto flex max-w-4xl flex-col p-4 sm:flex-row sm:justify-between">
             <address className="text-sm">
               <h2>Peter Strøiman ApS</h2>
