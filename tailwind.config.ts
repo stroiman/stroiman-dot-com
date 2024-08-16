@@ -20,6 +20,8 @@ const config: Config = {
         primary: colors.fuchsia,
         secondary: colors.zinc,
         body: colors.zinc,
+        em: colors.indigo[700],
+        "em-dark": colors.indigo[300],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -28,6 +30,9 @@ const config: Config = {
       },
       gridTemplateColumns: {
         menu: "auto 1fr",
+      },
+      scroll: {
+        normal: "scroll-mt-24",
       },
       screens: {
         widescreen: { raw: "(min-aspect-ratio: 3/2)" },
