@@ -28,7 +28,8 @@ export function Heading({
   return (
     <Component
       className={clsx(
-        "text-4xl font-normal text-slate-900 sm:text-5xl md:font-light dark:text-white",
+        "text-4xl font-normal sm:text-5xl md:font-light",
+        // text-slate-900 dark:text-white
         className,
       )}
     >
