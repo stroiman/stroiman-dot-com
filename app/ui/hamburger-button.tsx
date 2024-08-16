@@ -19,7 +19,7 @@ export default function HamburgerButton(props: {
       onClick={onClick}
       // &#9776;
     >
-      <div className="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-white transition-all before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-2.5 before:rounded before:bg-white before:transition-all before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-2.5 after:rounded after:bg-white after:transition-all after:content-['']"></div>
+      <div className="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-current transition-all before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-2.5 before:rounded before:bg-current before:transition-all before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-2.5 after:rounded after:bg-current after:transition-all after:content-['']"></div>
     </button>
   );
 }
