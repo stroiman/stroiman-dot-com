@@ -17,7 +17,7 @@
     "devPublish": {
       "headingText": "Publish to DEV",
       "paragraph1": "Jeg skriver artikler om softwareudvikling, der bliver publiceret til <0>DEV</0>. Selve skriveprocessen foregår i Obsidian. Dette plugin integrerer med DEVs API, så jeg kan publicerer nyt artikler, og rettelser til gamle, direkte fra Obsidian",
-      "paragraph2": "Med undtalese af lidt UI kode, er al kode i dette plugin udvilket med TDD. Det resulterede i en meget effektiv process, hvor koden <0>virkede første gang jeg testede det i et produktionsmiljø</0>. At skrive Obsidian-plugins, der er kan testes er ikke nemt, da man er afhængig af closed-source kode. <1>I denne artikkel</1> har jeg beskrevet hvordan jeg har anvedt dyb kendskab til JavaScript og TypeScript til at kunne strukturerer koden in testbaf form."
+      "paragraph2": "Med undtalese af lidt UI kode, er al kode i dette plugin udvilket med TDD. Det resulterede i en meget effektiv process, hvor koden <0>virkede første gang jeg testede det i et produktionsmiljø</0>. At skrive Obsidian-plugins, der er kan testes er ikke nemt, da man er afhængig af closed-source kode. <1>I denne artikkel</1> har jeg beskrevet hvordan jeg har anvedt dyb kendskab til JavaScript og TypeScript til at kunne strukturerer koden in testbar form."
     },
     "frontmatterSmith": {
       "headingText": "Frontmatter Smith",
