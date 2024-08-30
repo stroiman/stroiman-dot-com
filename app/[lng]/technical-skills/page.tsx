@@ -39,6 +39,7 @@ export default async function SkillsPage({ params }: { params: LangParam }) {
                   className="text-em dark:text-em-dark"
                   href="https://www.electronjs.org/"
                   target="_blank"
+                  rel="noopener noreferrer"
                 />,
                 <ASup />,
               ]}
@@ -54,12 +55,14 @@ export default async function SkillsPage({ params }: { params: LangParam }) {
                   className="text-em dark:text-em-dark"
                   href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain"
                   target="_blank"
+                  rel="noopener noreferrer"
                 />,
                 <em />,
                 <a
                   className="text-em dark:text-em-dark"
                   href="https://en.wikipedia.org/wiki/ECMAScript_version_history#6th_Edition_%E2%80%93_ECMAScript_2015"
                   target="_blank"
+                  rel="noopener noreferrer"
                 />,
               ]}
             />
@@ -117,7 +120,11 @@ export default async function SkillsPage({ params }: { params: LangParam }) {
               </p>
             </blockquote>
             <figcaption>
-              <A href="https://paulgraham.com/avg.html" target="_blank">
+              <A
+                href="https://paulgraham.com/avg.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Beating the Averages
               </A>{" "}
               by Paul Graham.
@@ -162,7 +169,7 @@ export default async function SkillsPage({ params }: { params: LangParam }) {
         <p>{t("dataSection.cosmosDb")}</p>
       </div>
       <SectionDiv className="my-6" />
-      <span className="text-muted text-sm" id="footnote-electron">
+      <span className="text-sm text-muted" id="footnote-electron">
         <b>1.</b> {t("electronSamples.electronExamplesHeading")}
         <ul className="inline list-disc [&>:not(:first-child)::before]:mr-2 [&>:not(:first-child)::before]:content-['\2022'] [&>:not(:first-child)]:ml-2">
           <li className="inline">Visual Studio Code</li>

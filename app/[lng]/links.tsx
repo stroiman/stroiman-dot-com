@@ -21,6 +21,7 @@ export default async function Links({
       <Link
         href="https://linkedin.com/in/stroiman"
         target="_blank"
+        rel="noopener noreferrer"
         className="hover:opacity-90"
         aria-label={t("links.linkedInLinkLabel")}
       >
@@ -29,6 +30,7 @@ export default async function Links({
       <Link
         href="https://github.com/stroiman"
         target="_blank"
+        rel="noopener noreferrer"
         className="hover:opacity-90"
         aria-label={t("links.githubLinkLabel")}
       >
