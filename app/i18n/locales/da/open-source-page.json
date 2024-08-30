@@ -1,0 +1,37 @@
+{
+  "headingText": "Open-source projecter.",
+  "paragraph1": "Softwareudvikling har forandret sig markant over de sidste 15 år. Selv store softwareudviklingshuse distribuerer dele af deres kode som open-source komponent. Dele, der ikke relaterer til deres kerneforretnint; komponenter, der løses mere generelle problemer",
+  "paragraph2": "Jeg er meget passionerer omkring hele open-source miljøet, og alt hvad jeg selv skriver, der ikke relaterer til en specifik application er noget jeg vil dele med andre.",
+  "paragraph3": "Når det kommer til stykket er hele min værktøjskasset sat sammen af gratis open-source værktøjer.",
+  "paragraph4": "Dette er ikke en komplet liste. Men her er mine seneste projekter",
+  "obsidianPlugins": {
+    "headingText": "Obsidian Plugins",
+    "paragraph1": "<0>Obsidian</0> is er et værktøj med mange muligheder. Du kan tager noter, holde dagbog, mødereferater, eller det kan fungerer som din personlige wiki. Og herinde kan nye ideer opstå, når man identificerer relationer mellem ellers helt urelaterede ideer.",
+    "paragraph2": "En stor del af værktøjets kraft kommer gennem de udvidelsesmuligheder der er via 'plug-ins'.",
+    "paragraph3": "Jeg har været Obsidian-bruger i 8-10 måneder, og med mellemrum opdager jeg at der manglede lige noget specifik functionalitet. Så derfor har jeg lavet mine egne plugins.",
+    "titleSync": {
+      "headingText": "TitleSync",
+      "paragraph1": "Holder titlen i noter synkroniseret med filnavnet.",
+      "paragraph2": "Dette plugin var mest til at håndterer et problem, når jeg oprettede nye filer, og brugte en automatisk 'template' til at udfylde indholet, inklusiv en title. Titlen var som regel 'Untitled', og når jeg rettede filnavnet, stod der stadig 'untitled' i filens indhold. Dette var mit første plugin, of sørger for at løse dette lettere bagatel-agtige problem"
+    },
+    "devPublish": {
+      "headingText": "Publish to DEV",
+      "paragraph1": "Jeg skriver artikler om softwareudvikling, der bliver publiceret til <0>DEV</0>. Selve skriveprocessen foregår i Obsidian. Dette plugin integrerer med DEVs API, så jeg kan publicerer nyt artikler, og rettelser til gamle, direkte fra Obsidian",
+      "paragraph2": "Med undtalese af list UI kode, er al kode i dette plugin udvilket med TDD. Det resulterede i en meget effektiv process, hvor koden <0>virkede første gang jeg testede det i et produktionsmiljø</0>. At skrive Obsidian-plugins, der er kan testes er ikke nemt, da man er afhængig af closed-source kode. <1>I denne artikkel</1> har jeg beskrevet hvordan jeg har anvedt dyb kendskab til JavaScript og TypeScript til at kunne strukturerer koden in testbaf form."
+    },
+    "frontmatterSmith": {
+      "headingText": "Frontmatter Smith",
+      "paragraph1": "Nogle af de stærke features i Obsidian er muligheden for at analyserer noter baseret på metadata i 'frontmetter'. Jeg skrev dette plugin for at lette indtastning af trivial information på daglig basis"
+    },
+    "templateWithTests": {
+      "headingText": "Plugin template with tests",
+      "paragraph1": "Dette er ikke et plugin i sig selv, men en skabelon for at skive plugins. Det er baseret på den <0>officielle Obsidian plugin skabelon</0>, men hvor jeg har tilføjet testværktøjer til at drive en TDD process"
+    }
+  },
+  "speed": {
+    "headingText": "Speed",
+    "paragraph1": "Speed er et test-framework for OCaml. Det blev skaby ud fra ønsket om at skrive OCaml TDD kode. Men ingen af de eksisterende værktøjer tilfredsstillede mine behov. De var i høj grad tæt koblet til filosofien om <0>unit-tests</0>. Men det er en ofte forekommende misforståelse at TDD går ud på at skrive unit tests.",
+    "paragraph2": "Jeg skrev en artikkel (på engelse) om, hvorfor TDD en effektiv udviklingsprocess. Du kan læse den her: <0>Stop writing unit tests</0>",
+    "paragraph3": "Speed udnytter avancerede funktioner i OCaml's type-system, fx. <0>Generalized algebraic datatypes</0>, <1>Extensible Variants</1>, og meta-programmering gennem <2>PPX generators- og rewriters</2>."
+  }
+}

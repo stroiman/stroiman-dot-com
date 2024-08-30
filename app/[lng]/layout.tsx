@@ -157,6 +157,14 @@ export default async function RootLayout({
                   </li>
                   <li>
                     <Link
+                      href={`/${lng}/open-source`}
+                      className="table-cell w-full text-center align-middle hover:opacity-90"
+                    >
+                      {t("nav.openSourceLinkText")}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
                       href={`/${lng}/legal`}
                       className="table-cell w-full text-center align-middle hover:opacity-90"
                     >
@@ -178,6 +186,9 @@ export default async function RootLayout({
               className="hover:opacity-90"
             >
               {t("nav.technicalSkillsLinkText")}
+            </Link>
+            <Link href={`/${lng}/open-source`} className="hover:opacity-90">
+              {t("nav.openSourceLinkText")}
             </Link>
             <Link href={`/${lng}/legal`} className="hover:opacity-90">
               {t("nav.legalLinkText")}

@@ -28,6 +28,21 @@ export function H2({
     </h2>
   );
 }
+export function H3({
+  children,
+  id,
+  className,
+}: {
+  className?: string;
+  id?: string;
+  children: ReactNode;
+}) {
+  return (
+    <h3 id={id} className={clsx("font-heading text-xl md:text-2xl", className)}>
+      {children}
+    </h3>
+  );
+}
 
 export function SkillSection({
   heading,

@@ -1,0 +1,37 @@
+{
+  "headingText": "Open Source Projects",
+  "paragraph1": "The world of software development has changed profoundly during the last 15 years. Large software development companies make parts of their software available as open-source; the components that are not part of their core business, but of a general nature.",
+  "paragraph2": "I share that philolosphy 100%, and when I write code, everything I write that is not related to a specific application or problem, I want to share that with others",
+  "paragraph3": "After all, my entire software development tool chain is based on free and open-source software; it would only be fair that I contribute back to the communities.",
+  "paragraph4": "This is by no means a complete list. I contains my most recent projects",
+  "obsidianPlugins": {
+    "headingText": "Obsidian Plugins",
+    "paragraph1": "<0>Obsidian</0> is an amazing note taking tool that can serve multiple purposes. It can be your daily journal. It can be your personal wiki. It can be the place where new ideas arise by identifying patterns in existing notes.",
+    "paragraph2": "A great part of the power and flexibility of Obsidian comes through it's extensibility through community plugins",
+    "paragraph3": "I've been using Obsidian for about 8-10 months now; and from time to time, there was functionality I desired, so I wrote my own plugin for that",
+    "titleSync": {
+      "headingText": "TitleSync",
+      "paragraph1": "Keeps the title in the node synchronised with the filename when you rename a file",
+      "paragraph2": "The primary use case was when I created a new note using a template to fill out the title in the note body. A blank note would have the title \"Untitled\" selected, but after writing a proper name; the contents had already been created and would keep the name \"Untitled\". This very small plugin updates the content."
+    },
+    "devPublish": {
+      "headingText": "Publish to DEV",
+      "paragraph1": "When I write articles on <0>DEV</0>, I author the content in Obsidian. To simplify the publishing process, I wrote this plugin.",
+      "paragraph2": "Apart from some minor UI code, this plugin was written test-first; which drove a very efficient development process. The initial prototype was developed in a single session and <0>it worked the first time</0>. Writing testable Obsidian plugins is not easy as you have dependencies to closed-source code. <1>This article</1> describes how I applied intimate knowledge of JavaScript and TypeScript to structure the structure the code to be testable."
+    },
+    "frontmatterSmith": {
+      "headingText": "Frontmatter Smith",
+      "paragraph1": "Some of the powerful features of Obsidian comes from analysing notes based on metadata in the 'frontmatter'. This plugin was written to simplify entry of trivial information you want to add on a daily basis."
+    },
+    "templateWithTests": {
+      "headingText": "Plugin template with tests",
+      "paragraph1": "This is not a plugin in itself, but a starting point for writing plugins. It is based on the <0>official Obsidian plugin template</0> but adds the scaffolding for automated testing"
+    }
+  },
+  "speed": {
+    "headingText": "Speed",
+    "paragraph1": "Speed is a test framework for OCaml. It was born out of a desire to write OCaml code driven by tests; but none of the existing libraries satisfied my needs. The existing libraries seemed to be very tightly coupled to the philosophy of writing <0>unit tests</0>; but a very misunderstood part of TDD is that it is <0>not</0> about writing unit tests at all.",
+    "paragraph2": "I wrote an article about why TDD is such an efficient process, you can read it here, <0>Stop writing unit tests</0>",
+    "paragraph3": "Speed utilises advanced features of the OCaml type system, such as <0>Generalized algebraic datatypes</0>, <1>Extensible Variants</1>, and meta-programming through <2>PPX generators and rewriters</2>"
+  }
+}

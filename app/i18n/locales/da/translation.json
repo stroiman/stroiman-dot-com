@@ -7,6 +7,7 @@
     "trainingLinkText": "Træning",
     "softwareDevelopmentLinkText": "$t(frontpage.softwareDevelopment.headingText)",
     "technicalSkillsLinkText": "Kompetencer",
+    "openSourceLinkText": "Open Source",
     "legalLinkText": "Virksomhed"
   },
   "pageNav": {
