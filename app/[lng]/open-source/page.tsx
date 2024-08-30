@@ -140,6 +140,17 @@ export default async function OpenSourcePage({
             />
           </P>
         </SkillSection>
+        <SkillSection
+          heading={
+            <ExternalLink href="https://github.com/stroiman/stroiman-dot-com">
+              {t("stroimanDotCom.headingText")}
+            </ExternalLink>
+          }
+        >
+          <P>
+            <Trans t={t} i18nKey="stroimanDotCom.paragraph1" />
+          </P>
+        </SkillSection>
       </div>
     </PageLayout>
   );

@@ -33,5 +33,9 @@
     "paragraph1": "Speed er et test-framework for OCaml. Det blev skaby ud fra ønsket om at skrive OCaml TDD kode. Men ingen af de eksisterende værktøjer tilfredsstillede mine behov. De var i høj grad tæt koblet til filosofien om <0>unit-tests</0>. Men det er en ofte forekommende misforståelse at TDD går ud på at skrive unit tests.",
     "paragraph2": "Jeg skrev en artikkel (på engelse) om, hvorfor TDD en effektiv udviklingsprocess. Du kan læse den her: <0>Stop writing unit tests</0>",
     "paragraph3": "Speed udnytter avancerede funktioner i OCaml's type-system, fx. <0>Generalized algebraic datatypes</0>, <1>Extensible Variants</1>, og meta-programmering gennem <2>PPX generators- og rewriters</2>."
+  },
+  "stroimanDotCom": {
+    "headingText": "Dette website",
+    "paragraph1": "Som open-source entusiast har jeg også gjort al source kode for dette website tilgængelig. Der er jo ikke noget information i kode, der ikke er tænkt at blive offentliggjort alligevel."
   }
 }
