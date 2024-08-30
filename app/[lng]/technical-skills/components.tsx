@@ -50,7 +50,7 @@ export function SkillSection({
   children,
   Logo,
 }: {
-  heading: string;
+  heading: ReactNode;
   headingId?: string;
   children: ReactNode;
   Logo?: React.ComponentType<{ className?: string }>;
@@ -66,7 +66,7 @@ export function SkillSection({
             <Logo className="w-[1em]" />
           </span>
         )}
-        <span>{heading}</span>
+        {typeof heading === "string" ? <span>{heading}</span> : heading}
       </h2>
 
       <div className="flex flex-col gap-2">{children}</div>
