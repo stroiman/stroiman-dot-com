@@ -13,7 +13,7 @@ export const ExternalLink = ({
 }) => (
   <a
     href={href}
-    className="text-teal-700 dark:text-teal-200"
+    className="cursor-pointer text-fuchsia-800 dark:text-fuchsia-200"
     target="_blank"
     rel="noopener noreferrer"
   >

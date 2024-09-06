@@ -9,7 +9,10 @@ import { Translation } from "react-i18next";
 import { SectionDiv } from "../components";
 
 const ASup = ({ children }: any) => (
-  <a className="text-em dark:text-em-dark" href="#footnote-electron">
+  <a
+    className="cursor-pointer text-em dark:text-em-dark"
+    href="#footnote-electron"
+  >
     <sup>{children}</sup>
   </a>
 );
