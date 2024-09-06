@@ -3,27 +3,11 @@ import PageLayout from "@/app/ui/page-layout";
 import { Trans } from "react-i18next/TransWithoutContext";
 import { H2, H3, SkillSection } from "../technical-skills/components";
 import { ReactNode } from "react";
+import { ExternalLink } from "../components";
 
 const P = ({ children }: { children: ReactNode }) => {
   return <p className="py-2">{children}</p>;
 };
-
-const ExternalLink = ({
-  children,
-  href,
-}: {
-  children?: ReactNode;
-  href: string;
-}) => (
-  <a
-    href={href}
-    className="text-teal-700 dark:text-teal-200"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    {children}
-  </a>
-);
 
 export default async function OpenSourcePage({
   params,
