@@ -7,6 +7,7 @@ import { A, H2, SkillSection } from "./components";
 import JavaScriptLogo from "./js-logo";
 import { Translation } from "react-i18next";
 import { SectionDiv } from "../components";
+import { SkillsPage as Stuff } from "../../components/skills-page";
 
 const ASup = ({ children }: any) => (
   <a
@@ -22,7 +23,8 @@ export default async function SkillsPage({ params }: { params: LangParam }) {
   const { t } = await useTranslation(lng, "skills-page");
 
   return (
-    <PageLayout heading={t("headingText")}>
+    <>
+      <Stuff />
       <p className="mb-4">
         <Trans
           t={t}
@@ -186,6 +188,6 @@ export default async function SkillsPage({ params }: { params: LangParam }) {
         <br />
         {t("electronSamples.atom")}
       </span>
-    </PageLayout>
+    </>
   );
 }
