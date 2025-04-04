@@ -127,8 +127,9 @@ export default async function RootLayout({
         className={clsx(
           inter.className,
           sourceSefif.className,
-          "flex min-h-screen flex-col bg-slate-50 bg-gradient-to-br from-orange-100 to-slate-200 font-light text-slate-900 dark:bg-black dark:from-orange-950 dark:to-slate-900 dark:text-white",
+          "flex min-h-screen flex-col bg-slate-100 font-light text-slate-900 dark:bg-slate-900 dark:text-white",
         )}
+        // bg-gradient-to-br from-orange-100 to-slate-200 dark:from-orange-950 dark:to-slate-900
       >
         <Menu
           lng={lng}
