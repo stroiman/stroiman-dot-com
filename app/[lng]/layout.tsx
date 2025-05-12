@@ -118,9 +118,8 @@ export default async function RootLayout({
         className={clsx(
           inter.className,
           sourceSefif.className,
-          "flex min-h-screen flex-col bg-slate-100 font-light text-slate-900 dark:bg-slate-900 dark:text-white",
+          "flex min-h-screen flex-col bg-orange-100 font-light text-slate-900 dark:bg-orange-700 dark:text-white",
         )}
-        // bg-gradient-to-br from-orange-100 to-slate-200 dark:from-orange-950 dark:to-slate-900
       >
         <Menu
           lng={lng}
@@ -139,6 +138,7 @@ export default async function RootLayout({
                       {t("nav.homeLinkText")}
                     </Link>
                   </li>
+                  {/*
                   <li>
                     <Link
                       href={`/${lng}/technical-skills`}
@@ -163,6 +163,7 @@ export default async function RootLayout({
                       {t("nav.legalLinkText")}
                     </Link>
                   </li>
+                  */}
                 </ul>
                 <Links lng={lng} className="fixed bottom-4 right-4" />
               </nav>
@@ -173,6 +174,7 @@ export default async function RootLayout({
             aria-label={t("pageNav.navLabel")}
             className="hidden flex-grow space-x-6 md:block"
           >
+            {/*
             <Link
               href={`/${lng}/technical-skills`}
               className="hover:opacity-90"
@@ -185,6 +187,7 @@ export default async function RootLayout({
             <Link href={`/${lng}/legal`} className="hover:opacity-90">
               {t("nav.legalLinkText")}
             </Link>
+            */}
             <div className="inline space-x-2">
               <Links lng={lng} />
             </div>

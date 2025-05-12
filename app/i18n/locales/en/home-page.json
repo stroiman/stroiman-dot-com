@@ -1,3 +1,9 @@
 {
-  "skillsSection": {}
+  "skillsSection": {
+    "heading": "Skills",
+    "skills": {}
+  },
+  "projectsSection": {
+    "heading": "Select Works"
+  }
 }

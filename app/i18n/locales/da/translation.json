@@ -8,7 +8,9 @@
     "softwareDevelopmentLinkText": "$t(frontpage.softwareDevelopment.headingText)",
     "technicalSkillsLinkText": "Kompetencer",
     "openSourceLinkText": "Open Source",
-    "legalLinkText": "Virksomhed"
+    "legalLinkText": "Virksomhed",
+    "skillsLinkText": "Kompetencer",
+    "projectsLinkText": "Projects"
   },
   "pageNav": {
     "navLabel": "For denne side"

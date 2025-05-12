@@ -6,6 +6,7 @@ import translation from "./locales/da/translation.json";
 import legalPage from "./locales/da/legal-page.json";
 import skillsPage from "./locales/da/skills-page.json";
 import openSourcePage from "./locales/da/open-source-page.json";
+import homePage from "./locales/da/home-page.json";
 
 export const defaultNS = "translation";
 export type Lang = (typeof languages)[number];
@@ -19,6 +20,7 @@ declare module "i18next" {
       ["legal-page"]: typeof legalPage;
       ["skills-page"]: typeof skillsPage;
       ["open-source-page"]: typeof openSourcePage;
+      ["home-page"]: typeof homePage;
     };
   }
 }

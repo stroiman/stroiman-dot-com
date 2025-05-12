@@ -10,11 +10,8 @@ export default async function Submenu({ params }: { params: LangParam }) {
       <Link href="#software-development" className="hover:opacity-90">
         {t("nav.softwareDevelopmentLinkText")}
       </Link>
-      <Link href="#courses" className="hover:opacity-90">
-        {t("nav.coursesLinkText")}
-      </Link>
-      <Link href="#training" className="hover:opacity-90">
-        {t("nav.trainingLinkText")}
+      <Link href="#skills" className="hover:opacity-90">
+        {t("nav.skillsLinkText")}
       </Link>
     </div>
   );

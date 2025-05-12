@@ -8,7 +8,9 @@
     "softwareDevelopmentLinkText": "$t(frontpage.softwareDevelopment.headingText)",
     "technicalSkillsLinkText": "Skills",
     "openSourceLinkText": "Open Source",
-    "legalLinkText": "Legal"
+    "legalLinkText": "Legal",
+    "skillsLinkText": "Skills",
+    "projectsLinkText": "Projects"
   },
   "pageNav": {
     "navLabel": "Page"
