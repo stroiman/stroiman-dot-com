@@ -1,18 +1,9 @@
-import { Trans } from "react-i18next/TransWithoutContext";
 import Menu from "../ui/menu";
 import Link from "next/link";
 import Main from "../ui/main";
-import Section, { HeroSection } from "./section";
-import ProgrammerWorking from "../ui/image-svgs/programmer-working";
-import Education from "../ui/image-svgs/education";
 import LanguageSwitcher from "./language-switcher";
 import Links from "./links";
-import Para from "./para";
-import { Programmer } from "../ui/image-svgs";
-import { WrapSvg } from "./svg-image-container";
-import ArrowForward from "../ui/icons";
 import { dir } from "i18next";
-import type { Metadata } from "next";
 import { Inter, Source_Serif_4 } from "next/font/google";
 import "../globals.css";
 import { clsx } from "clsx";

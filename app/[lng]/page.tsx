@@ -1,17 +1,11 @@
 import { Lang, useTranslation } from "../i18n";
 import { Trans } from "react-i18next/TransWithoutContext";
-import Menu from "../ui/menu";
-import Link from "next/link";
-import Main from "../ui/main";
 import Section, { HeroSection } from "./section";
 import ProgrammerWorking from "../ui/image-svgs/programmer-working";
 import Education from "../ui/image-svgs/education";
-import LanguageSwitcher from "./language-switcher";
-import Links from "./links";
 import Para from "./para";
 import { Programmer } from "../ui/image-svgs";
 import { WrapSvg } from "./svg-image-container";
-import ArrowForward from "../ui/icons";
 import { ReactChild } from "react";
 import clsx from "clsx";
 import { SectionDiv } from "./components";
