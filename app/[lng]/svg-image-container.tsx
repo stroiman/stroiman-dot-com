@@ -26,7 +26,7 @@ export function WrapSvg<T extends { className?: string }>(
       <Component
         {...props}
         className={clsx(
-          "rounded-xl border-2 border-current bg-gradient-radial dark:border-gray-600 dark:from-zinc-500 dark:text-black",
+          "rounded-xl border-2 border-slate-300 bg-gradient-radial dark:border-gray-600 dark:from-zinc-500 dark:text-black",
           props.className,
         )}
       />

@@ -64,21 +64,24 @@ export default async function Page({ params }: { params: { lng: Lang } }) {
         id="software-development"
         heading={t("nav.softwareDevelopmentLinkText")}
       >
-        <TextAndImage
-          imagePlacement="right"
-          Image={(props) => (
-            <ProgrammerWorkingWrapped
-              {...props}
-              title={t("frontpage.softwareDevelopment.imageTitle")}
-            />
-          )}
-        >
-          <>
-            <Para>{t("frontpage.softwareDevelopment.paragraph1")}</Para>
-            <Para>{t("frontpage.softwareDevelopment.paragraph2")}</Para>
-            <Para>{t("frontpage.softwareDevelopment.paragraph3")}</Para>
-          </>
-        </TextAndImage>
+        <div className="rounded-lg border border-slate-300 bg-white p-4">
+          <TextAndImage
+            imagePlacement="right"
+            Image={(props) => (
+              <ProgrammerWorkingWrapped
+                {...props}
+                title={t("frontpage.softwareDevelopment.imageTitle")}
+              />
+            )}
+          >
+            <>
+              <Para>{t("frontpage.softwareDevelopment.paragraph1")}</Para>
+              <Para>{t("frontpage.softwareDevelopment.paragraph2")}</Para>
+              <Para>{t("frontpage.softwareDevelopment.paragraph3")}</Para>
+            </>
+          </TextAndImage>
+        </div>
+        {/*
         <a
           href={`/${lng}/technical-skills`}
           className="mt-8 inline-flex items-center justify-center rounded-lg bg-gray-50 p-5 text-base font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
@@ -86,8 +89,10 @@ export default async function Page({ params }: { params: { lng: Lang } }) {
           <span>Læs mere om mine tekniske kompetencer</span>
           <ArrowForward />
         </a>
+        */}
       </Section>
 
+      {/*
       <SectionDiv />
 
       <Section id="courses" heading={t("frontpage.courses.headingText")}>
@@ -125,6 +130,7 @@ export default async function Page({ params }: { params: { lng: Lang } }) {
           <Para>{t("frontpage.training.paragraph1")}</Para>
         </TextAndImage>
       </Section>
+      */}
     </>
   );
 }
